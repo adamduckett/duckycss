@@ -4,11 +4,6 @@
 @import "../tools/tools.font-size";
 
 
-@mixin test-inuit-old-ie-before() {
-  $inuit-oldIE: true !global;
-}
-
-
 @include test-module("[mixin] inuit-font-size") {
 
   @include test("it should output a font-size and line-height based on a given input") {
@@ -73,4 +68,3 @@
     }
   }
 }
-
