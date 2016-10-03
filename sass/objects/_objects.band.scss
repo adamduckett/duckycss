@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #BAND
+   ========================================================================== */
+
+/**
+ * Horizontal sections spanning the full width of the page.
+ */
+
+.o-band {
+  padding-top: $inuit-global-spacing-unit;
+  padding-bottom: $inuit-global-spacing-unit;
+}
+
+
+/* Size variants.
+   ========================================================================== */
+
+.o-band--tiny {
+  padding-top: $inuit-global-spacing-unit-tiny;
+  padding-bottom: $inuit-global-spacing-unit-tiny;
+}
+
+.o-band--small {
+  padding-top: $inuit-global-spacing-unit-small;
+  padding-bottom: $inuit-global-spacing-unit-small;
+}
+
+.o-band--large {
+  padding-top: $inuit-global-spacing-unit-large;
+  padding-bottom: $inuit-global-spacing-unit-large;
+}
+
+.o-band--huge {
+  padding-top: $inuit-global-spacing-unit-huge;
+  padding-bottom: $inuit-global-spacing-unit-huge;
+}

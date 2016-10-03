@@ -47,7 +47,7 @@
  *
  * OBJECTS
  * Wrapper..............Page constraint object.
- * Layout...............Generic layout module.
+ * Grid.................Generic grid system module.
  * Media................Image- and text-like content side by side. The
  *                      poster-child of OOCSS.
  * Flag.................Table-layout-based advancement on the Media object.
@@ -75,9 +75,9 @@
  */
 
 // SETTINGS
-@import "settings/example.settings.config";
+@import "settings/settings.config";
 @import "settings/settings.core";
-@import "settings/example.settings.global";
+@import "settings/settings.global";
 
 
 
@@ -118,16 +118,17 @@
 //
 // Uncomment and add to this section as necessary.
 @import "objects/objects.wrapper";
-@import "objects/objects.layout";
+@import "objects/objects.grid";
 @import "objects/objects.media";
 @import "objects/objects.flag";
 @import "objects/objects.list-bare";
 @import "objects/objects.list-inline";
+@import "objects/objects.band";
 @import "objects/objects.box";
 @import "objects/objects.block";
 @import "objects/objects.ratio";
 @import "objects/objects.crop";
-@import "objects/objects.tables";
+@import "objects/objects.table";
 @import "objects/objects.pack";
 
 
