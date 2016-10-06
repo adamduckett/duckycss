@@ -18,13 +18,13 @@
 
 @if (variable-exists(inuit-breakpoints)) {
 
-  @each $name in $breakpoint-has-widths {
+  @each $name in $inuit-breakpoint-has-widths {
     // Print a media query for each property
     @include media-query($name) {
       // Our responsive class suffix
       $suffix: '\\@#{$name}';
 
-      @include width-classes($fractions,$suffix);
+      @include width-classes($inuit-fractions,$suffix);
     }
   }
 
