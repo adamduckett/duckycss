@@ -1,0 +1,44 @@
+///* ========================================================================
+//   #MEDIA-QUERIES
+//   ======================================================================== */
+
+// Convert a `px` value into its `em` equivalent.
+
+@function px-to-em($px, $font-size: $inuit-global-font-size) {
+
+  @if unitless($px) {
+      @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
+
+      @return px-to-em($px * 1px, $font-size);
+
+  } @else if unit($px) == em {
+      @return $px;
+  }
+
+  @return ($px / $font-size) * 1em;
+}
+
+
+// Get the width of each breakpoint in our variable map
+
+@function get-breakpoint-width($name, $bp: $inuit-breakpoints) {
+  @if map-has-key($bp, $name) {
+      @return map-get($bp, $name);
+  } @else {
+      @warn "Breakpoint #{$name} wasn't found in $breakpoints.";
+  }
+}
+
+
+// Convert any px value into its rem equivalent.
+
+@mixin media-query($name) {
+  $value: inspect(map-get($inuit-breakpoints, $name));
+  $em: px-to-em(get-breakpoint-width($name, $inuit-breakpoints));
+
+  // Print a media query containing the value
+  @media screen and (min-width: #{$em}) {
+    @content;
+  }
+
+}

@@ -1,0 +1,23 @@
+///* ========================================================================
+//   #WIDTHS
+//   ======================================================================== */
+
+// Generate our width utility classes.
+
+@mixin width-classes($fractions:$inuit-fractions,$namespace:"") {
+  // Loop through our fractions
+  @each $denominator in $fractions {
+    // Prevent outputting whole fractions
+    $loop: $denominator - 1;
+
+    @for $numerator from 1 through $loop {
+      $percent: ($numerator / $denominator);
+      // Only output a whole class for `1/1`
+      @if $percent > 0 {
+        .u-#{$numerator}\/#{$denominator}#{$namespace} {
+          width: ($numerator / $denominator) * 100% !important;
+        }
+      }
+    }
+  }
+}

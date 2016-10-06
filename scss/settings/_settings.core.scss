@@ -49,6 +49,31 @@ $inuit-global-spacing-unit-factor-huge:   4    !default;
 
 
 
+// Define the fractions we want to output utility width classes for.
+$inuit-fractions: 1 2 3 4 5 !default;
+
+
+// Define our project's breakpoints
+$inuit-breakpoints: (
+  'mobile'  : 320px,
+  'tablet'  : 740px,
+  'desktop' : 980px,
+  'wide'    : 1300px
+) !default;
+
+
+// The breakpoints we want to output utility width classes for.
+$breakpoint-has-widths: (
+  'mobile',
+  'tablet',
+  'desktop',
+  'wide'
+) !default;
+
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
 //                               W A R N I N G                                //
