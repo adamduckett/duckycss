@@ -1,8 +1,6 @@
-example.html
-*.css
 *.gz
 node_modules/
 bower_components/
-test/*.css
+*.css.map
 .sass-cache
 .DS_Store
