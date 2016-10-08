@@ -1,8 +1,11 @@
-# inuitcss: the ducky edition
+#duckycss
 
-[inuitcss](http://inuitcss.com) is an "extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects" by [Harry Roberts](https://twitter.com/csswizardry).
+duckycss is an unopinionated OOCSS framework; it is a fork of  [inuitcss](https://github.com/inuitcss/inuitcss) which is maintained by [Harry Roberts](https://twitter.com/csswizardry).
 
-After spending a lot of time building my own OOCSS framework from scratch I found it becoming more and more similar to inuitcss as time went on. With that in mind I canned my own project (duckycss) forked my own copy of inuitcss; this is the result. I definitely recommend you checkout the original [inuitcss](https://github.com/inuitcss/inuitcss) repo.
+##Prologue
+After spending a lot of time building my own OOCSS framework from scratch I found it becoming more similar to inuitcss as time went on.
+
+With that in mind, I canned my own project and forked a copy of inuitcss to use as a starting point. This is the result.
 
 ##Installation
 I think it's important I don't try to force people outside of their own workflow. So whether you use [Gulp](http://gulpjs.com/), [Grunt](http://gruntjs.com/), [Webpack](https://webpack.github.io/) or the latest task runner all the cool kids are using go nuts. Basically this is an 'Installation' section about how there is no installation section :)
@@ -11,7 +14,7 @@ I think it's important I don't try to force people outside of their own workflow
 Either download the .zip or clone this repo to your local machine and ```cd``` into it. You'll notice 3 folders: ```css/```, ```less/``` and ```scss/```.
 
 ###Sass
-[Sass](http://sass-lang.com/) is my CSS extension language of choice so (just like the original inuitcss) this project is geared towards Sass users, in particular the ```.scss``` variety.
+[Sass](http://sass-lang.com/) is my CSS extension language of choice so this project is geared towards Sass users- in particular the SCSS (Sassy CSS) syntax.
 
 ###Less
 Despite my penchant for Sass we use [Less](http://lesscss.org/) at [EKM](https://www.ekm.com/) hence my inclusion of a ```less/``` directory. Unfortunately Less doesn't quite include the same functionality as Sass in terms of logical and looping operators so the code in ```less/``` is more verbose than its big sister's.
@@ -22,7 +25,9 @@ If pre-processing isn't your bag I've included both minified and un-minified CSS
 TL;DR pick your weapon of choice :)
 
 ##File Structure
-Both ```sass/``` and ```less``` directories follow the Harry Robert's 'inverted triangle' ([ITCSS](http://itcss.io/)) methodology of CSS architecture meaning each 'layer' of styles gets progressively more specific and explicit the further down we go. This reduces the likelihood of '[specificity wars](http://csswizardry.com/2014/10/the-specificity-graph/)' which results in less code :)
+Both ```sass/``` and ```less``` directories follow Harry Roberts' 'inverted triangle' ([ITCSS](http://itcss.io/)) methodology of CSS architecture.
+
+Each 'layer' of styles gets progressively more specific and explicit the further down we go. When combined with a single class approach the result is a project free of specificity wars.
 
 ```
 settings/
@@ -39,7 +44,7 @@ main.scss
 This is where our variables live both in terms of framework-specific variables and our project's base/global variables. This is where the party starts, basically.
 
 ###Tools
-All our functions and mixins reside here- most of which are central to the way inuitcss works. But some of them are for you to play with, lucky you!
+All our functions and mixins reside here- most of which are central to the way duckycss works. But some of them are for you to play with, lucky you!
 
 ###Generic
 We define our wide-reaching styles like `box-sizing` and `clear-fix` here. They're kind of a big deal. The ```generic/``` also includes our resets in the form of [@necolas](https://twitter.com/necolas)'s [Normalize.css](http://necolas.github.io/normalize.css/) and our additional mini-reset. This layer lays out the foundation upon which the rest of our styles
