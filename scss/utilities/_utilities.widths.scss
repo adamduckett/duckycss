@@ -6,7 +6,7 @@
  * Widths
  */
 
-@include width-classes($inuit-fractions);
+@include width-classes($ducky-fractions);
 
 
 
@@ -16,15 +16,15 @@
  * Responsive widths
  */
 
-@if (variable-exists(inuit-breakpoints)) {
+@if (variable-exists(ducky-breakpoints)) {
 
-  @each $name in $inuit-breakpoint-has-widths {
+  @each $name in $ducky-breakpoint-has-widths {
     // Print a media query for each property
     @include media-query($name) {
       // Our responsive class suffix
       $suffix: '\\@#{$name}';
 
-      @include width-classes($inuit-fractions,$suffix);
+      @include width-classes($ducky-fractions,$suffix);
     }
   }
 

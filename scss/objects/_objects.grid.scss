@@ -53,7 +53,7 @@
 // By default we use the `font-size: 0;` trick to remove whitespace between
 // items. Set this to true in order to use a markup-based strategy like
 // commenting out whitespace or minifying HTML.
-$inuit-use-markup-fix: false !default;
+$ducky-use-markup-fix: false !default;
 
 
 
@@ -74,9 +74,9 @@ $inuit-use-markup-fix: false !default;
   margin:  0; /* [2] */
   padding: 0; /* [2] */
   list-style: none; /* [1] */
-  margin-left: -$inuit-global-spacing-unit; /* [3] */
+  margin-left: -$ducky-global-spacing-unit; /* [3] */
 
-  @if ($inuit-use-markup-fix == false) {
+  @if ($ducky-use-markup-fix == false) {
     font-size: 0;
   }
 
@@ -99,9 +99,9 @@ $inuit-use-markup-fix: false !default;
     display: inline-block; /* [2] */
     vertical-align: top; /* [3] */
     width: 100%; /* [4] */
-    padding-left: $inuit-global-spacing-unit; /* [5] */
+    padding-left: $ducky-global-spacing-unit; /* [5] */
 
-    @if ($inuit-use-markup-fix == false) {
+    @if ($ducky-use-markup-fix == false) {
       font-size: 1rem;
     }
 
@@ -115,40 +115,40 @@ $inuit-use-markup-fix: false !default;
    ========================================================================== */
 
 .o-grid--tiny {
-  margin-left: -$inuit-global-spacing-unit-tiny;
+  margin-left: -$ducky-global-spacing-unit-tiny;
 
   > .o-grid__item {
-    padding-left: $inuit-global-spacing-unit-tiny;
+    padding-left: $ducky-global-spacing-unit-tiny;
   }
 
 }
 
 
 .o-grid--small {
-  margin-left: -$inuit-global-spacing-unit-small;
+  margin-left: -$ducky-global-spacing-unit-small;
 
   > .o-grid__item {
-    padding-left: $inuit-global-spacing-unit-small;
+    padding-left: $ducky-global-spacing-unit-small;
   }
 
 }
 
 
 .o-grid--large {
-  margin-left: -$inuit-global-spacing-unit-large;
+  margin-left: -$ducky-global-spacing-unit-large;
 
   > .o-grid__item {
-    padding-left: $inuit-global-spacing-unit-large;
+    padding-left: $ducky-global-spacing-unit-large;
   }
 
 }
 
 
 .o-grid--huge {
-  margin-left: -$inuit-global-spacing-unit-huge;
+  margin-left: -$ducky-global-spacing-unit-huge;
 
   > .o-grid__item {
-    padding-left: $inuit-global-spacing-unit-huge;
+    padding-left: $ducky-global-spacing-unit-huge;
   }
 
 }

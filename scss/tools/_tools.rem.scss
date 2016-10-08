@@ -4,7 +4,7 @@
 
 // Convert any px value into its rem equivalent.
 
-@function inuit-rem($value) {
+@function ducky-rem($value) {
 
   @if (type-of($value) == number) {
 
@@ -16,7 +16,7 @@
     @error "`#{$value}` needs to be a number.";
   }
 
-  @return $value / $inuit-global-font-size * 1rem;
+  @return $value / $ducky-global-font-size * 1rem;
 
 }
 
@@ -25,10 +25,10 @@
 // fallback.
 //
 // .simple-usage {
-//   @include inuit-rem(padding, 10px);
+//   @include ducky-rem(padding, 10px);
 // }
 
-@mixin inuit-rem($property, $value) {
+@mixin ducky-rem($property, $value) {
 
   @if (type-of($value) == number) {
 
@@ -40,6 +40,6 @@
     @error "`#{$value}` needs to be a number.";
   }
 
-  #{$property}: inuit-rem($value);
+  #{$property}: ducky-rem($value);
 
 }

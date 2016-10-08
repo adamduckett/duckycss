@@ -1,17 +1,11 @@
 /* ==========================================================================
-   INUITCSS
+   DUCKYCSS
    ========================================================================== */
 
 /**
- * inuitcss, by @csswizardry
+ * duckycss, by @adam_duckett
  *
- * github.com/inuitcss | inuitcss.com
- */
-
-/**
- * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
- * Instead, copy and paste it into your own CSS directory and make additions,
- * extensions, and modifications there.
+ * github.com/duckycss
  */
 
 /**
@@ -19,7 +13,7 @@
  *
  * SETTINGS
  * Config...............Project-level configuration and feature switches.
- * Core.................inuitcss’ core and setup settings.
+ * Core.................duckycss’ core and setup settings.
  * Global...............Project-wide variables and settings.
  *
  * TOOLS
@@ -63,7 +57,7 @@
  *
  * COMPONENTS
  * Buttons..............An example button component, and how it fits into the
- *                      inuitcss framework.
+ *                      duckycss framework.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -117,8 +111,6 @@
 
 
 // OBJECTS
-//
-// Uncomment and add to this section as necessary.
 @import "objects/objects.wrapper";
 @import "objects/objects.grid";
 @import "objects/objects.media";
@@ -148,8 +140,6 @@
 
 // UTILITIES
 @import "utilities/utilities.clearfix";
-
-$inuit-offsets: true;
 @import "utilities/utilities.widths";
 @import "utilities/utilities.headings";
 @import "utilities/utilities.spacing";

@@ -28,7 +28,7 @@
  * change the delimiter by predefining the following variable:
  */
 
-$inuit-list-inline-delimiter:   ",\00A0" !default;
+$ducky-list-inline-delimiter:   ",\00A0" !default;
 
 .o-list-inline--delimited {
   font-size: 0;
@@ -42,7 +42,7 @@ $inuit-list-inline-delimiter:   ",\00A0" !default;
   > .o-list-inline__item + .o-list-inline__item {
 
     &:before {
-      content: "#{$inuit-list-inline-delimiter}";
+      content: "#{$ducky-list-inline-delimiter}";
     }
 
   }

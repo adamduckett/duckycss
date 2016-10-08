@@ -21,7 +21,7 @@ figure,
 hr,
 table,
 fieldset {
-  @include inuit-rem(margin-bottom, $inuit-global-spacing-unit);
+  @include ducky-rem(margin-bottom, $ducky-global-spacing-unit);
 }
 
 
@@ -30,7 +30,7 @@ fieldset {
  */
 
 dd, ol, ul {
-  @include inuit-rem(margin-left, $inuit-global-spacing-unit);
+  @include ducky-rem(margin-left, $ducky-global-spacing-unit);
 }
 
 /* stylelint-enable selector-list-comma-newline-after */

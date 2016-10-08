@@ -4,7 +4,7 @@
 
 // Convert a `px` value into its `em` equivalent.
 
-@function px-to-em($px, $font-size: $inuit-global-font-size) {
+@function px-to-em($px, $font-size: $ducky-global-font-size) {
 
   @if unitless($px) {
       @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
@@ -21,7 +21,7 @@
 
 // Get the width of each breakpoint in our variable map
 
-@function get-breakpoint-width($name, $bp: $inuit-breakpoints) {
+@function get-breakpoint-width($name, $bp: $ducky-breakpoints) {
   @if map-has-key($bp, $name) {
       @return map-get($bp, $name);
   } @else {
@@ -33,8 +33,8 @@
 // Convert any px value into its rem equivalent.
 
 @mixin media-query($name) {
-  $value: inspect(map-get($inuit-breakpoints, $name));
-  $em: px-to-em(get-breakpoint-width($name, $inuit-breakpoints));
+  $value: inspect(map-get($ducky-breakpoints, $name));
+  $em: px-to-em(get-breakpoint-width($name, $ducky-breakpoints));
 
   // Print a media query containing the value
   @media screen and (min-width: #{$em}) {

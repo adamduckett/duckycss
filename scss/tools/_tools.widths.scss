@@ -4,7 +4,7 @@
 
 // Generate our width utility classes.
 
-@mixin width-classes($fractions:$inuit-fractions,$namespace:"") {
+@mixin width-classes($fractions:$ducky-fractions,$namespace:"") {
   // Loop through our fractions
   @each $denominator in $fractions {
     // Prevent outputting whole fractions

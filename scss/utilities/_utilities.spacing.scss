@@ -15,7 +15,7 @@
 
 /* stylelint-disable string-quotes */
 
-$inuit-spacing-directions: (
+$ducky-spacing-directions: (
   null,
   '-top',
   '-right',
@@ -23,26 +23,26 @@ $inuit-spacing-directions: (
   '-left',
 );
 
-$inuit-spacing-properties: (
+$ducky-spacing-properties: (
   'padding',
   'margin'
 );
 
-$inuit-spacing-sizes: (
-  null: $inuit-global-spacing-unit,
-  '-tiny': $inuit-global-spacing-unit-tiny,
-  '-small': $inuit-global-spacing-unit-small,
-  '-large': $inuit-global-spacing-unit-large,
-  '-huge': $inuit-global-spacing-unit-huge,
+$ducky-spacing-sizes: (
+  null: $ducky-global-spacing-unit,
+  '-tiny': $ducky-global-spacing-unit-tiny,
+  '-small': $ducky-global-spacing-unit-small,
+  '-large': $ducky-global-spacing-unit-large,
+  '-huge': $ducky-global-spacing-unit-huge,
   '-none': 0
 ) !default;
 
 
-@each $property in $inuit-spacing-properties {
+@each $property in $ducky-spacing-properties {
 
-  @each $direction in $inuit-spacing-directions {
+  @each $direction in $ducky-spacing-directions {
 
-    @each $size, $value in $inuit-spacing-sizes {
+    @each $size, $value in $ducky-spacing-sizes {
 
       .u-#{$property}#{$direction}#{$size} {
         #{$property}#{$direction}: $value !important;
