@@ -1,8 +1,9 @@
 {
-  "name": "inuitcss",
-  "version": "6.0.0-beta.3",
-  "homepage": "https://github.com/inuitcss/inuitcss",
+  "name": "dukycss",
+  "version": "1.0.0",
+  "homepage": "https://github.com/duckycss/duckycss",
   "authors": [
+    "Adam Duckett <adammichaelduckett@gmail.com>",
     "Harry Roberts <csswizardry@gmail.com>"
   ],
   "contributors": [
@@ -11,23 +12,19 @@
     "Florian Bouvot",
     "Nenad Jelovac"
   ],
-  "description": "Extensible, scalable, Sass-based, OOCSS framework for large and long-lasting UI projects.",
-  "main": "example.main.scss",
+  "description": "An unopinionated OOCSS framework available in SCSS and Less flavours.",
+  "main": "main.scss",
   "keywords": [
     "oocss",
     "sass",
+    "less",
     "bem",
     "itcss",
     "css"
   ],
   "ignore": [
     "**/.*",
-    "test",
-    "package.json",
-    "CONTRIBUTING.md"
+    "package.json"
   ],
-  "license": "Apache-2.0",
-  "dependencies": {
-    "sass-mq": "^3.2.9"
-  }
+  "license": "Apache-2.0"
 }
