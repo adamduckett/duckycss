@@ -9,28 +9,37 @@
 .o-band {
   padding-top: $ducky-global-spacing-unit;
   padding-bottom: $ducky-global-spacing-unit;
+
+  @each $modifier, $multiple in $ducky-modifiers {
+    $value: ($ducky-global-spacing-unit * $multiple);
+
+    &--#{$modifier} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+  }
 }
 
 
-/* Size variants.
-   ========================================================================== */
+// /* Size variants.
+//    ========================================================================== */
 
-.o-band--tiny {
-  padding-top: $ducky-global-spacing-unit-tiny;
-  padding-bottom: $ducky-global-spacing-unit-tiny;
-}
+// .o-band--tiny {
+//   padding-top: $ducky-global-spacing-unit-tiny;
+//   padding-bottom: $ducky-global-spacing-unit-tiny;
+// }
 
-.o-band--small {
-  padding-top: $ducky-global-spacing-unit-small;
-  padding-bottom: $ducky-global-spacing-unit-small;
-}
+// .o-band--small {
+//   padding-top: $ducky-global-spacing-unit-small;
+//   padding-bottom: $ducky-global-spacing-unit-small;
+// }
 
-.o-band--large {
-  padding-top: $ducky-global-spacing-unit-large;
-  padding-bottom: $ducky-global-spacing-unit-large;
-}
+// .o-band--large {
+//   padding-top: $ducky-global-spacing-unit-large;
+//   padding-bottom: $ducky-global-spacing-unit-large;
+// }
 
-.o-band--huge {
-  padding-top: $ducky-global-spacing-unit-huge;
-  padding-bottom: $ducky-global-spacing-unit-huge;
-}
+// .o-band--huge {
+//   padding-top: $ducky-global-spacing-unit-huge;
+//   padding-bottom: $ducky-global-spacing-unit-huge;
+// }

@@ -1,23 +1,18 @@
 @charset "UTF-8";
 /* ==========================================================================
-   INUITCSS
+   DUCKYCSS
    ========================================================================== */
 /**
- * inuitcss, by @csswizardry
+ * duckycss, by @adam_duckett
  *
- * github.com/inuitcss | inuitcss.com
- */
-/**
- * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
- * Instead, copy and paste it into your own CSS directory and make additions,
- * extensions, and modifications there.
+ * github.com/duckycss
  */
 /**
  * CONTENTS
  *
  * SETTINGS
  * Config...............Project-level configuration and feature switches.
- * Core.................inuitcss’ core and setup settings.
+ * Core.................duckycssÔÇÖ core and setup settings.
  * Global...............Project-wide variables and settings.
  *
  * TOOLS
@@ -31,13 +26,13 @@
  *
  * GENERIC
  * Box-sizing...........Better default `box-sizing`.
- * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Normalize.css........A level playing field using @necolasÔÇÖ Normalize.css.
  * Reset................A tiny reset to complement Normalize.css.
  * Shared...............Sensibly and tersely share some global commonalities
  *                      (particularly useful when managing vertical rhythm).
  *
  * ELEMENTS
- * Page.................Set up our document’s default `font-size` and
+ * Page.................Set up our documentÔÇÖs default `font-size` and
  *                      `line-height`.
  * Headings.............Very minimal (i.e. only font-size information) for
  *                      headings 1 through 6.
@@ -61,7 +56,7 @@
  *
  * COMPONENTS
  * Buttons..............An example button component, and how it fits into the
- *                      inuitcss framework.
+ *                      duckycss framework.
  *
  * UTILITIES
  * Clearfix.............Bind our clearfix onto a utility class.
@@ -80,12 +75,10 @@
  * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
  */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -101,15 +94,13 @@ html {
   -ms-text-size-adjust: 100%;
   /* 3 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */
-}
+  /* 3 */ }
 
 /**
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -131,8 +122,7 @@ nav,
 section,
 summary {
   /* 1 */
-  display: block;
-}
+  display: block; }
 
 /**
  * Add the correct display in IE 9-.
@@ -141,23 +131,20 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 progress {
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /**
  * Add the correct display in IE 10-.
@@ -165,8 +152,7 @@ progress {
  */
 template,
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 /* Links
    ========================================================================== */
@@ -178,8 +164,7 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the outline on focused links when they are also active or hovered
@@ -187,8 +172,7 @@ a {
  */
 a:active,
 a:hover {
-  outline-width: 0;
-}
+  outline-width: 0; }
 
 /* Text-level semantics
    ========================================================================== */
@@ -202,31 +186,27 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   text-decoration: underline dotted;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
 strong {
-  font-weight: inherit;
-}
+  font-weight: inherit; }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
 strong {
-  font-weight: bolder;
-}
+  font-weight: bolder; }
 
 /**
  * Add the correct font style in Android 4.3-.
  */
 dfn {
-  font-style: italic;
-}
+  font-style: italic; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -234,23 +214,20 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-}
+  margin: 0.67em 0; }
 
 /**
  * Add the correct background and color in IE 9-.
  */
 mark {
   background-color: #ff0;
-  color: #000;
-}
+  color: #000; }
 
 /**
  * Add the correct font size in all browsers.
  */
 small {
-  font-size: 80%;
-}
+  font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
@@ -261,16 +238,13 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em;
-}
+  bottom: -0.25em; }
 
 sup {
-  top: -0.5em;
-}
+  top: -0.5em; }
 
 /* Embedded content
    ========================================================================== */
@@ -278,15 +252,13 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none;
-}
+  border-style: none; }
 
 /**
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* Grouping content
    ========================================================================== */
@@ -301,15 +273,13 @@ samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Add the correct margin in IE 8.
  */
 figure {
-  margin: 1em 40px;
-}
+  margin: 1em 40px; }
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -321,8 +291,7 @@ hr {
   height: 0;
   /* 1 */
   overflow: visible;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* Forms
    ========================================================================== */
@@ -338,15 +307,13 @@ textarea {
   font: inherit;
   /* 1 */
   margin: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Restore the font weight unset by the previous rule.
  */
 optgroup {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /**
  * Show the overflow in IE.
@@ -355,8 +322,7 @@ optgroup {
 button,
 input {
   /* 1 */
-  overflow: visible;
-}
+  overflow: visible; }
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -365,8 +331,7 @@ input {
 button,
 select {
   /* 1 */
-  text-transform: none;
-}
+  text-transform: none; }
 
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -378,8 +343,7 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -389,8 +353,7 @@ button::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -399,8 +362,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
+  outline: 1px dotted ButtonText; }
 
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
@@ -408,8 +370,7 @@ button:-moz-focusring,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -429,15 +390,13 @@ legend {
   padding: 0;
   /* 3 */
   white-space: normal;
-  /* 1 */
-}
+  /* 1 */ }
 
 /**
  * Remove the default vertical scrollbar in IE.
  */
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 /**
  * 1. Add the correct box sizing in IE 10-.
@@ -448,16 +407,14 @@ textarea {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+  height: auto; }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -467,24 +424,21 @@ textarea {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
+  /* 2 */ }
 
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54;
-}
+  opacity: 0.54; }
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
@@ -494,8 +448,7 @@ textarea {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* ==========================================================================
    #RESET
@@ -511,24 +464,21 @@ figure,
 hr,
 fieldset, legend {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /**
  * Remove trailing margins from nested lists.
  */
 li > ol,
 li > ul {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 /**
  * Remove default table spacing.
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* ==========================================================================
    #SHARED
@@ -549,15 +499,13 @@ figure,
 hr,
 table,
 fieldset {
-  margin-bottom: 1.5rem;
-}
+  margin-bottom: 1.5rem; }
 
 /**
  * Consistent indentation for lists.
  */
 dd, ol, ul {
-  margin-left: 1.5rem;
-}
+  margin-left: 1.5rem; }
 
 /* stylelint-enable selector-list-comma-newline-after */
 /* ==========================================================================
@@ -569,7 +517,7 @@ dd, ol, ul {
  * 1. Set the default `font-size` and `line-height` for the entire project,
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ * 2. Force scrollbars to always be visible to prevent awkward ÔÇÿjumpsÔÇÖ when
  *    navigating between pages that do/do not have enough content to produce
  *    scrollbars naturally.
  * 3. Ensure the page always fills at least the entire height of the viewport.
@@ -582,8 +530,7 @@ html {
   overflow-y: scroll;
   /* [2] */
   min-height: 100%;
-  /* [3] */
-}
+  /* [3] */ }
 
 /* ==========================================================================
    #HEADINGS
@@ -595,33 +542,27 @@ html {
  */
 h1 {
   font-size: 2.25rem;
-  line-height: 1.33333;
-}
+  line-height: 1.33333; }
 
 h2 {
   font-size: 1.75rem;
-  line-height: 1.71429;
-}
+  line-height: 1.71429; }
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1;
-}
+  line-height: 1; }
 
 h4 {
   font-size: 1.25rem;
-  line-height: 1.2;
-}
+  line-height: 1.2; }
 
 h5 {
   font-size: 1.125rem;
-  line-height: 1.33333;
-}
+  line-height: 1.33333; }
 
 h6 {
   font-size: 1rem;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 /* ==========================================================================
    #IMAGES
@@ -639,18 +580,16 @@ img {
   font-style: italic;
   /* [2] */
   vertical-align: middle;
-  /* [3] */
-}
+  /* [3] */ }
 
 /**
- * 1. If a `width` and/or `height` attribute have been explicitly defined, let’s
+ * 1. If a `width` and/or `height` attribute have been explicitly defined, letÔÇÖs
  *    not make the image fluid.
  */
 img[width],
 img[height] {
   /* [1] */
-  max-width: none;
-}
+  max-width: none; }
 
 /* ==========================================================================
    #TABLES
@@ -660,8 +599,7 @@ img[height] {
  */
 table {
   width: 100%;
-  /* [1] */
-}
+  /* [1] */ }
 
 /* ==========================================================================
    #WRAPPER
@@ -676,35 +614,29 @@ table {
   padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
-}
-.o-wrapper:after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
+  max-width: 1200px; }
+  .o-wrapper:after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important; }
 
 /* Size variants.
    ========================================================================== */
 .o-wrapper--tiny {
   padding-right: 6px;
-  padding-left: 6px;
-}
+  padding-left: 6px; }
 
 .o-wrapper--small {
   padding-right: 12px;
-  padding-left: 12px;
-}
+  padding-left: 12px; }
 
 .o-wrapper--large {
   padding-right: 48px;
-  padding-left: 48px;
-}
+  padding-left: 48px; }
 
 .o-wrapper--huge {
   padding-right: 96px;
-  padding-left: 96px;
-}
+  padding-left: 96px; }
 
 /* ==========================================================================
    #GRID
@@ -775,8 +707,7 @@ table {
   /* [1] */
   margin-left: -24px;
   /* [3] */
-  font-size: 0;
-}
+  font-size: 0; }
 
 /**
  * 1. Required in order to combine fluid widths with fixed gutters.
@@ -799,45 +730,34 @@ table {
   /* [4] */
   padding-left: 24px;
   /* [5] */
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 /* Gutter size modifiers.
    ========================================================================== */
 .o-grid--tiny {
-  margin-left: -6px;
-}
-.o-grid--tiny > .o-grid__item {
-  padding-left: 6px;
-}
+  margin-left: -6px; }
+  .o-grid--tiny > .o-grid__item {
+    padding-left: 6px; }
 
 .o-grid--small {
-  margin-left: -12px;
-}
-.o-grid--small > .o-grid__item {
-  padding-left: 12px;
-}
+  margin-left: -12px; }
+  .o-grid--small > .o-grid__item {
+    padding-left: 12px; }
 
 .o-grid--large {
-  margin-left: -48px;
-}
-.o-grid--large > .o-grid__item {
-  padding-left: 48px;
-}
+  margin-left: -48px; }
+  .o-grid--large > .o-grid__item {
+    padding-left: 48px; }
 
 .o-grid--huge {
-  margin-left: -96px;
-}
-.o-grid--huge > .o-grid__item {
-  padding-left: 96px;
-}
+  margin-left: -96px; }
+  .o-grid--huge > .o-grid__item {
+    padding-left: 96px; }
 
 .o-grid--flush {
-  margin-left: 0;
-}
-.o-grid--flush > .o-grid__item {
-  padding-left: 0;
-}
+  margin-left: 0; }
+  .o-grid--flush > .o-grid__item {
+    padding-left: 0; }
 
 /* Vertical alignment modifiers.
    ========================================================================== */
@@ -845,15 +765,13 @@ table {
  * Align all grid items to the middles of each other.
  */
 .o-grid--middle > .o-grid__item {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /**
  * Align all grid items to the bottoms of each other.
  */
 .o-grid--bottom > .o-grid__item {
-  vertical-align: bottom;
-}
+  vertical-align: bottom; }
 
 /* Fill order modifiers.
    ========================================================================== */
@@ -861,32 +779,26 @@ table {
  * Fill up the grid system from the centre.
  */
 .o-grid--center {
-  text-align: center;
-}
-.o-grid--center > .o-grid__item {
-  text-align: left;
-}
+  text-align: center; }
+  .o-grid--center > .o-grid__item {
+    text-align: left; }
 
 /**
  * Fill up the grid system from the right-hand side.
  */
 .o-grid--right {
-  text-align: right;
-}
-.o-grid--right > .o-grid__item {
-  text-align: left;
-}
+  text-align: right; }
+  .o-grid--right > .o-grid__item {
+    text-align: left; }
 
 /**
  * Reverse the rendered order of the grid system.
  */
 .o-grid--reverse {
-  direction: rtl;
-}
-.o-grid--reverse > .o-grid__item {
-  direction: ltr;
-  text-align: left;
-}
+  direction: rtl; }
+  .o-grid--reverse > .o-grid__item {
+    direction: ltr;
+    text-align: left; }
 
 /* ==========================================================================
    #MEDIA
@@ -896,30 +808,24 @@ table {
  * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
  */
 .o-media {
-  display: block;
-}
-.o-media:after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
+  display: block; }
+  .o-media:after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important; }
 
 .o-media__img {
   float: left;
-  margin-right: 24px;
-}
-.o-media__img > img {
-  display: block;
-}
+  margin-right: 24px; }
+  .o-media__img > img {
+    display: block; }
 
 .o-media__body {
   overflow: hidden;
-  display: block;
-}
-.o-media__body,
-.o-media__body > :last-child {
-  margin-bottom: 0;
-}
+  display: block; }
+  .o-media__body,
+  .o-media__body > :last-child {
+    margin-bottom: 0; }
 
 /* Size variants
    ========================================================================== */
@@ -928,51 +834,41 @@ table {
  * reversible options for all available sizes.
  */
 .o-media--tiny > .o-media__img {
-  margin-right: 6px;
-}
+  margin-right: 6px; }
 .o-media--tiny.o-media--reverse > .o-media__img {
   margin-right: 0;
-  margin-left: 6px;
-}
+  margin-left: 6px; }
 
 .o-media--small > .o-media__img {
-  margin-right: 12px;
-}
+  margin-right: 12px; }
 .o-media--small.o-media--reverse > .o-media__img {
   margin-right: 0;
-  margin-left: 12px;
-}
+  margin-left: 12px; }
 
 .o-media--large > .o-media__img {
-  margin-right: 48px;
-}
+  margin-right: 48px; }
 .o-media--large.o-media--reverse > .o-media__img {
   margin-right: 0;
-  margin-left: 48px;
-}
+  margin-left: 48px; }
 
 .o-media--huge > .o-media__img {
-  margin-right: 96px;
-}
+  margin-right: 96px; }
 .o-media--huge.o-media--reverse > .o-media__img {
   margin-right: 0;
-  margin-left: 96px;
-}
+  margin-left: 96px; }
 
 /* Reversed media objects
    ========================================================================== */
 .o-media--reverse > .o-media__img {
   float: right;
   margin-right: 0;
-  margin-left: 24px;
-}
+  margin-left: 24px; }
 
 /* Gutterless media objects
    ========================================================================== */
 .o-media--flush > .o-media__img {
   margin-right: 0;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 /* ==========================================================================
    #FLAG
@@ -992,8 +888,7 @@ table {
   display: table;
   /* [1] */
   width: 100%;
-  /* [2] */
-}
+  /* [2] */ }
 
 /**
  * Items within a flag object. There should only ever be one of each.
@@ -1004,8 +899,7 @@ table {
 .o-flag__body {
   display: table-cell;
   vertical-align: middle;
-  /* [1] */
-}
+  /* [1] */ }
 
 /**
  * Flag images have a space between them and the body of the object.
@@ -1019,12 +913,10 @@ table {
   padding-right: 24px;
   /**
    * 1. Fixes problem with images disappearing.
-   */
-}
-.o-flag__img > img {
-  max-width: none;
-  /* [1] */
-}
+   */ }
+  .o-flag__img > img {
+    max-width: none;
+    /* [1] */ }
 
 /**
  * The container for the main content of the flag object.
@@ -1033,74 +925,60 @@ table {
  */
 .o-flag__body {
   width: auto;
-  /* [1] */
-}
-.o-flag__body,
-.o-flag__body > :last-child {
-  margin-bottom: 0;
-}
+  /* [1] */ }
+  .o-flag__body,
+  .o-flag__body > :last-child {
+    margin-bottom: 0; }
 
 /* Size variants.
    ========================================================================== */
 .o-flag--tiny > .o-flag__img {
-  padding-right: 6px;
-}
+  padding-right: 6px; }
 .o-flag--tiny.o-flag--reverse > .o-flag__img {
   padding-right: 0;
-  padding-left: 6px;
-}
+  padding-left: 6px; }
 
 .o-flag--small > .o-flag__img {
-  padding-right: 12px;
-}
+  padding-right: 12px; }
 .o-flag--small.o-flag--reverse > .o-flag__img {
   padding-right: 0;
-  padding-left: 12px;
-}
+  padding-left: 12px; }
 
 .o-flag--large > .o-flag__img {
-  padding-right: 48px;
-}
+  padding-right: 48px; }
 .o-flag--large.o-flag--reverse > .o-flag__img {
   padding-right: 0;
-  padding-left: 48px;
-}
+  padding-left: 48px; }
 
 .o-flag--huge > .o-flag__img {
-  padding-right: 96px;
-}
+  padding-right: 96px; }
 .o-flag--huge.o-flag--reverse > .o-flag__img {
   padding-right: 0;
-  padding-left: 96px;
-}
+  padding-left: 96px; }
 
 .o-flag--flush > .o-flag__img {
   padding-right: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 /* Reversed flag.
    ========================================================================== */
 /**
- * 1. Swap the rendered direction of the object…
- * 2. …and reset it.
+ * 1. Swap the rendered direction of the objectÔÇª
+ * 2. ÔÇªand reset it.
  * 3. Reassign margins to the correct sides.
  */
 .o-flag--reverse {
   direction: rtl;
-  /* [1] */
-}
-.o-flag--reverse > .o-flag__img,
-.o-flag--reverse > .o-flag__body {
-  direction: ltr;
-  /* [2] */
-}
-.o-flag--reverse > .o-flag__img {
-  padding-right: 0;
-  /* [3] */
-  padding-left: 24px;
-  /* [3] */
-}
+  /* [1] */ }
+  .o-flag--reverse > .o-flag__img,
+  .o-flag--reverse > .o-flag__body {
+    direction: ltr;
+    /* [2] */ }
+  .o-flag--reverse > .o-flag__img {
+    padding-right: 0;
+    /* [3] */
+    padding-left: 24px;
+    /* [3] */ }
 
 /* Alignment variants.
    ========================================================================== */
@@ -1109,13 +987,11 @@ table {
  */
 .o-flag--top > .o-flag__img,
 .o-flag--top > .o-flag__body {
-  vertical-align: top;
-}
+  vertical-align: top; }
 
 .o-flag--bottom > .o-flag__img,
 .o-flag--bottom > .o-flag__body {
-  vertical-align: bottom;
-}
+  vertical-align: bottom; }
 
 /* ==========================================================================
    #LIST-BARE
@@ -1126,8 +1002,7 @@ table {
  */
 .o-list-bare {
   list-style: none;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 /* ==========================================================================
    #LIST-INLINE
@@ -1137,12 +1012,10 @@ table {
  */
 .o-list-inline {
   margin-left: 0;
-  list-style: none;
-}
+  list-style: none; }
 
 .o-list-inline__item {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /* Delimited list.
    ========================================================================== */
@@ -1151,14 +1024,11 @@ table {
  * change the delimiter by predefining the following variable:
  */
 .o-list-inline--delimited {
-  font-size: 0;
-}
-.o-list-inline--delimited > .o-list-inline__item {
-  font-size: 1rem;
-}
-.o-list-inline--delimited > .o-list-inline__item + .o-list-inline__item:before {
-  content: ", ";
-}
+  font-size: 0; }
+  .o-list-inline--delimited > .o-list-inline__item {
+    font-size: 1rem; }
+  .o-list-inline--delimited > .o-list-inline__item + .o-list-inline__item:before {
+    content: ", "; }
 
 /* ==========================================================================
    #BAND
@@ -1168,30 +1038,19 @@ table {
  */
 .o-band {
   padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-/* Size variants.
-   ========================================================================== */
-.o-band--tiny {
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.o-band--small {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.o-band--large {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.o-band--huge {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+  padding-bottom: 24px; }
+  .o-band--tiny {
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  .o-band--small {
+    padding-top: 12px;
+    padding-bottom: 12px; }
+  .o-band--large {
+    padding-top: 48px;
+    padding-bottom: 48px; }
+  .o-band--huge {
+    padding-top: 96px;
+    padding-bottom: 96px; }
 
 /* ==========================================================================
    #BOX
@@ -1205,38 +1064,30 @@ table {
 .o-box {
   display: block;
   /* [1] */
-  padding: 24px;
-}
-.o-box:after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
-.o-box > :last-child {
-  margin-bottom: 0;
-}
+  padding: 24px; }
+  .o-box:after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important; }
+  .o-box > :last-child {
+    margin-bottom: 0; }
 
 /* Size variants
    ========================================================================== */
 .o-box--flush {
-  padding: 0;
-}
+  padding: 0; }
 
 .o-box--tiny {
-  padding: 6px;
-}
+  padding: 6px; }
 
 .o-box--small {
-  padding: 12px;
-}
+  padding: 12px; }
 
 .o-box--large {
-  padding: 48px;
-}
+  padding: 48px; }
 
 .o-box--huge {
-  padding: 96px;
-}
+  padding: 96px; }
 
 /* ==========================================================================
    #BLOCK
@@ -1247,43 +1098,33 @@ table {
  */
 .o-block {
   display: block;
-  text-align: center;
-}
+  text-align: center; }
 
 .o-block__img {
   margin-bottom: 24px;
   /* Size variants.
-     ====================================================================== */
-}
-.o-block--flush > .o-block__img {
-  margin-bottom: 0;
-}
-.o-block--tiny > .o-block__img {
-  margin-bottom: 6px;
-}
-.o-block--small > .o-block__img {
-  margin-bottom: 12px;
-}
-.o-block--large > .o-block__img {
-  margin-bottom: 48px;
-}
-.o-block--huge > .o-block__img {
-  margin-bottom: 96px;
-}
+     ====================================================================== */ }
+  .o-block--flush > .o-block__img {
+    margin-bottom: 0; }
+  .o-block--tiny > .o-block__img {
+    margin-bottom: 6px; }
+  .o-block--small > .o-block__img {
+    margin-bottom: 12px; }
+  .o-block--large > .o-block__img {
+    margin-bottom: 48px; }
+  .o-block--huge > .o-block__img {
+    margin-bottom: 96px; }
 
 .o-block__body {
-  display: block;
-}
+  display: block; }
 
 /* Alignment variants.
    ========================================================================== */
 .o-block--right {
-  text-align: right;
-}
+  text-align: right; }
 
 .o-block--left {
-  text-align: left;
-}
+  text-align: left; }
 
 /* ==========================================================================
    #RATIO
@@ -1299,15 +1140,13 @@ table {
 .o-ratio {
   position: relative;
   display: block;
-  overflow: hidden;
-}
-.o-ratio:before {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-bottom: 100%;
-  /* [1] */
-}
+  overflow: hidden; }
+  .o-ratio:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 100%;
+    /* [1] */ }
 
 .o-ratio__content,
 .o-ratio > iframe,
@@ -1318,8 +1157,7 @@ table {
   bottom: 0;
   left: 0;
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 /* stylelint-disable */
 /* Ratio variants.
@@ -1331,16 +1169,13 @@ table {
  *
  */
 .o-ratio--2\:1:before {
-  padding-bottom: 50%;
-}
+  padding-bottom: 50%; }
 
 .o-ratio--4\:3:before {
-  padding-bottom: 75%;
-}
+  padding-bottom: 75%; }
 
 .o-ratio--16\:9:before {
-  padding-bottom: 56.25%;
-}
+  padding-bottom: 56.25%; }
 
 /* stylelint-enable */
 /* ==========================================================================
@@ -1358,14 +1193,13 @@ table {
   /* [1] */
   display: block;
   overflow: hidden;
-  /* [2] */
-}
+  /* [2] */ }
 
 /**
  * Apply this class to the content (usually `img`) that needs cropping.
  *
- * 1. Image’s default positioning is top-left in the cropping box.
- * 2. Make sure the media doesn’t stop itself too soon.
+ * 1. ImageÔÇÖs default positioning is top-left in the cropping box.
+ * 2. Make sure the media doesnÔÇÖt stop itself too soon.
  */
 .o-crop__content {
   position: absolute;
@@ -1374,27 +1208,23 @@ table {
   left: 0;
   /* [1] */
   max-width: none;
-  /* [2] */
-}
+  /* [2] */ }
 
 /**
  * We can position the media in different locations within the cropping area.
  */
 .o-crop__content--right {
   right: 0;
-  left: auto;
-}
+  left: auto; }
 
 .o-crop__content--bottom {
   top: auto;
-  bottom: 0;
-}
+  bottom: 0; }
 
 .o-crop__content--center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translate(-50%, -50%); }
 
 /* stylelint-disable */
 /* Crop-ratio variants.
@@ -1406,16 +1236,13 @@ table {
  *
  */
 .o-crop--2\:1 {
-  padding-bottom: 50%;
-}
+  padding-bottom: 50%; }
 
 .o-crop--4\:3 {
-  padding-bottom: 75%;
-}
+  padding-bottom: 75%; }
 
 .o-crop--16\:9 {
-  padding-bottom: 56.25%;
-}
+  padding-bottom: 56.25%; }
 
 /* stylelint-enable */
 /* ==========================================================================
@@ -1425,8 +1252,7 @@ table {
  * A simple object for manipulating the structure of HTML `table`s.
  */
 .o-table {
-  width: 100%;
-}
+  width: 100%; }
 
 /* Equal-width table cells.
    ========================================================================== */
@@ -1438,30 +1264,25 @@ table {
  * https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout#Values
  */
 .o-table--fixed {
-  table-layout: fixed;
-}
+  table-layout: fixed; }
 
 /* Size variants.
    ========================================================================== */
 .o-table--tiny th,
 .o-table--tiny td {
-  padding: 6px;
-}
+  padding: 6px; }
 
 .o-table--small th,
 .o-table--small td {
-  padding: 12px;
-}
+  padding: 12px; }
 
 .o-table--large th,
 .o-table--large td {
-  padding: 48px;
-}
+  padding: 48px; }
 
 .o-table--huge th,
 .o-table--huge td {
-  padding: 96px;
-}
+  padding: 96px; }
 
 /* ==========================================================================
    #PACK
@@ -1481,8 +1302,7 @@ table {
   /* [2] */
   display: table;
   table-layout: fixed;
-  /* [3] */
-}
+  /* [3] */ }
 
 /**
  * 1. Cause children to adopt table-like structure.
@@ -1491,53 +1311,43 @@ table {
   display: table-cell;
   /* [1] */
   /* Vertical alignment variants.
-     ====================================================================== */
-}
-.o-pack--middle > .o-pack__item {
-  vertical-align: middle;
-}
-.o-pack--bottom > .o-pack__item {
-  vertical-align: bottom;
-}
+     ====================================================================== */ }
+  .o-pack--middle > .o-pack__item {
+    vertical-align: middle; }
+  .o-pack--bottom > .o-pack__item {
+    vertical-align: bottom; }
 
 /* Unequal-width items.
    ========================================================================== */
 .o-pack--auto {
-  table-layout: auto;
-}
+  table-layout: auto; }
 
 /* Size variants.
    ========================================================================== */
 .o-pack--tiny {
-  border-spacing: 6px;
-}
+  border-spacing: 6px; }
 
 .o-pack--small {
-  border-spacing: 12px;
-}
+  border-spacing: 12px; }
 
 .o-pack--large {
-  border-spacing: 48px;
-}
+  border-spacing: 48px; }
 
 .o-pack--huge {
-  border-spacing: 96px;
-}
+  border-spacing: 96px; }
 
 /* Reversed order packs
    ========================================================================== */
 .o-pack--rev {
-  direction: rtl;
-}
-.o-pack--rev > .o-pack__item {
-  direction: ltr;
-}
+  direction: rtl; }
+  .o-pack--rev > .o-pack__item {
+    direction: ltr; }
 
 /* ==========================================================================
    #BUTTONS
    ========================================================================== */
 /**
- * This is an example component. Extend inuitcss by building your own components
+ * This is an example component. Extend duckycss by building your own components
  * that make up your UI. Component classes are prefixed with a `c-`.
  */
 /**
@@ -1563,55 +1373,43 @@ table {
   /* [5] */
   padding: 12px 24px;
   transition: 0.25s;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
 /* Style variants
    ========================================================================== */
 .c-btn--primary {
-  background-color: #4a8ec2;
-}
-.c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
-  text-decoration: none;
-  /* [4] */
-  color: #fff;
-}
-.c-btn--primary:hover, .c-btn--primary:focus {
-  background-color: #3774a2;
-}
+  background-color: #4a8ec2; }
+  .c-btn--primary, .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
+    text-decoration: none;
+    /* [4] */
+    color: #fff; }
+  .c-btn--primary:hover, .c-btn--primary:focus {
+    background-color: #3774a2; }
 
 .c-btn--secondary {
-  background-color: #2f4054;
-}
-.c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
-  text-decoration: none;
-  color: #fff;
-}
-.c-btn--secondary:hover, .c-btn--secondary:focus {
-  background-color: #1d2733;
-}
+  background-color: #2f4054; }
+  .c-btn--secondary, .c-btn--secondary:hover, .c-btn--secondary:active, .c-btn--secondary:focus {
+    text-decoration: none;
+    color: #fff; }
+  .c-btn--secondary:hover, .c-btn--secondary:focus {
+    background-color: #1d2733; }
 
 .c-btn--tertiary {
   background-color: #fff;
-  color: #4a8ec2;
-}
-.c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
-  text-decoration: none;
-  color: #4a8ec2;
-}
-.c-btn--tertiary:hover, .c-btn--tertiary:focus {
-  color: #3774a2;
-}
+  color: #4a8ec2; }
+  .c-btn--tertiary, .c-btn--tertiary:hover, .c-btn--tertiary:active, .c-btn--tertiary:focus {
+    text-decoration: none;
+    color: #4a8ec2; }
+  .c-btn--tertiary:hover, .c-btn--tertiary:focus {
+    color: #3774a2; }
 
 /* Size variants
    ========================================================================== */
 .c-btn--small {
-  padding: 0.375rem 0.75rem;
-}
+  padding: 0.375rem 0.75rem; }
 
 .c-btn--large {
-  padding: 1.5rem 3rem;
-}
+  padding: 1.5rem 3rem; }
 
 /* Ghost buttons
    ========================================================================== */
@@ -1620,35 +1418,25 @@ table {
  */
 .c-btn--ghost {
   border: 2px solid currentColor;
-  padding: 10px 22px;
-}
-.c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
-  background: none;
-}
-.c-btn--ghost.c-btn--small {
-  padding: 4px 10px;
-}
-.c-btn--ghost.c-btn--large {
-  padding: 22px 46px;
-}
-.c-btn--ghost.c-btn--primary {
-  color: #4a8ec2;
-}
-.c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
-  color: #3774a2;
-}
-.c-btn--ghost.c-btn--secondary {
-  color: #2f4054;
-}
-.c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
-  color: #1d2733;
-}
-.c-btn--ghost.c-btn--tertiary {
-  color: #fff;
-}
-.c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
-  color: #fff;
-}
+  padding: 10px 22px; }
+  .c-btn--ghost, .c-btn--ghost:hover, .c-btn--ghost:active, .c-btn--ghost:focus {
+    background: none; }
+  .c-btn--ghost.c-btn--small {
+    padding: 4px 10px; }
+  .c-btn--ghost.c-btn--large {
+    padding: 22px 46px; }
+  .c-btn--ghost.c-btn--primary {
+    color: #4a8ec2; }
+    .c-btn--ghost.c-btn--primary:hover, .c-btn--ghost.c-btn--primary:focus {
+      color: #3774a2; }
+  .c-btn--ghost.c-btn--secondary {
+    color: #2f4054; }
+    .c-btn--ghost.c-btn--secondary:hover, .c-btn--ghost.c-btn--secondary:focus {
+      color: #1d2733; }
+  .c-btn--ghost.c-btn--tertiary {
+    color: #fff; }
+    .c-btn--ghost.c-btn--tertiary:hover, .c-btn--ghost.c-btn--tertiary:focus {
+      color: #fff; }
 
 /* ==========================================================================
    #CLEARFIX
@@ -1659,8 +1447,7 @@ table {
 .u-clearfix:after {
   content: "" !important;
   display: block !important;
-  clear: both !important;
-}
+  clear: both !important; }
 
 /* ==========================================================================
    #WIDTHS
@@ -1669,232 +1456,173 @@ table {
  * Widths
  */
 .u-1\/1 {
-  width: 100% !important;
-}
+  width: 100% !important; }
 
 .u-1\/2 {
-  width: 50% !important;
-}
+  width: 50% !important; }
 
 .u-1\/3 {
-  width: 33.33333% !important;
-}
+  width: 33.33333% !important; }
 
 .u-2\/3 {
-  width: 66.66667% !important;
-}
+  width: 66.66667% !important; }
 
 .u-1\/4 {
-  width: 25% !important;
-}
+  width: 25% !important; }
 
 .u-2\/4 {
-  width: 50% !important;
-}
+  width: 50% !important; }
 
 .u-3\/4 {
-  width: 75% !important;
-}
+  width: 75% !important; }
 
 .u-1\/5 {
-  width: 20% !important;
-}
+  width: 20% !important; }
 
 .u-2\/5 {
-  width: 40% !important;
-}
+  width: 40% !important; }
 
 .u-3\/5 {
-  width: 60% !important;
-}
+  width: 60% !important; }
 
 .u-4\/5 {
-  width: 80% !important;
-}
+  width: 80% !important; }
 
 /**
  * Responsive widths
  */
 @media screen and (min-width: 20em) {
   .u-1\/1\@mobile {
-    width: 100% !important;
-  }
+    width: 100% !important; }
 
   .u-1\/2\@mobile {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-1\/3\@mobile {
-    width: 33.33333% !important;
-  }
+    width: 33.33333% !important; }
 
   .u-2\/3\@mobile {
-    width: 66.66667% !important;
-  }
+    width: 66.66667% !important; }
 
   .u-1\/4\@mobile {
-    width: 25% !important;
-  }
+    width: 25% !important; }
 
   .u-2\/4\@mobile {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-3\/4\@mobile {
-    width: 75% !important;
-  }
+    width: 75% !important; }
 
   .u-1\/5\@mobile {
-    width: 20% !important;
-  }
+    width: 20% !important; }
 
   .u-2\/5\@mobile {
-    width: 40% !important;
-  }
+    width: 40% !important; }
 
   .u-3\/5\@mobile {
-    width: 60% !important;
-  }
+    width: 60% !important; }
 
   .u-4\/5\@mobile {
-    width: 80% !important;
-  }
-}
+    width: 80% !important; } }
 @media screen and (min-width: 46.25em) {
   .u-1\/1\@tablet {
-    width: 100% !important;
-  }
+    width: 100% !important; }
 
   .u-1\/2\@tablet {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-1\/3\@tablet {
-    width: 33.33333% !important;
-  }
+    width: 33.33333% !important; }
 
   .u-2\/3\@tablet {
-    width: 66.66667% !important;
-  }
+    width: 66.66667% !important; }
 
   .u-1\/4\@tablet {
-    width: 25% !important;
-  }
+    width: 25% !important; }
 
   .u-2\/4\@tablet {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-3\/4\@tablet {
-    width: 75% !important;
-  }
+    width: 75% !important; }
 
   .u-1\/5\@tablet {
-    width: 20% !important;
-  }
+    width: 20% !important; }
 
   .u-2\/5\@tablet {
-    width: 40% !important;
-  }
+    width: 40% !important; }
 
   .u-3\/5\@tablet {
-    width: 60% !important;
-  }
+    width: 60% !important; }
 
   .u-4\/5\@tablet {
-    width: 80% !important;
-  }
-}
+    width: 80% !important; } }
 @media screen and (min-width: 61.25em) {
   .u-1\/1\@desktop {
-    width: 100% !important;
-  }
+    width: 100% !important; }
 
   .u-1\/2\@desktop {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-1\/3\@desktop {
-    width: 33.33333% !important;
-  }
+    width: 33.33333% !important; }
 
   .u-2\/3\@desktop {
-    width: 66.66667% !important;
-  }
+    width: 66.66667% !important; }
 
   .u-1\/4\@desktop {
-    width: 25% !important;
-  }
+    width: 25% !important; }
 
   .u-2\/4\@desktop {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-3\/4\@desktop {
-    width: 75% !important;
-  }
+    width: 75% !important; }
 
   .u-1\/5\@desktop {
-    width: 20% !important;
-  }
+    width: 20% !important; }
 
   .u-2\/5\@desktop {
-    width: 40% !important;
-  }
+    width: 40% !important; }
 
   .u-3\/5\@desktop {
-    width: 60% !important;
-  }
+    width: 60% !important; }
 
   .u-4\/5\@desktop {
-    width: 80% !important;
-  }
-}
+    width: 80% !important; } }
 @media screen and (min-width: 81.25em) {
   .u-1\/1\@wide {
-    width: 100% !important;
-  }
+    width: 100% !important; }
 
   .u-1\/2\@wide {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-1\/3\@wide {
-    width: 33.33333% !important;
-  }
+    width: 33.33333% !important; }
 
   .u-2\/3\@wide {
-    width: 66.66667% !important;
-  }
+    width: 66.66667% !important; }
 
   .u-1\/4\@wide {
-    width: 25% !important;
-  }
+    width: 25% !important; }
 
   .u-2\/4\@wide {
-    width: 50% !important;
-  }
+    width: 50% !important; }
 
   .u-3\/4\@wide {
-    width: 75% !important;
-  }
+    width: 75% !important; }
 
   .u-1\/5\@wide {
-    width: 20% !important;
-  }
+    width: 20% !important; }
 
   .u-2\/5\@wide {
-    width: 40% !important;
-  }
+    width: 40% !important; }
 
   .u-3\/5\@wide {
-    width: 60% !important;
-  }
+    width: 60% !important; }
 
   .u-4\/5\@wide {
-    width: 80% !important;
-  }
-}
+    width: 80% !important; } }
 /* ==========================================================================
    #HEADINGS
    ========================================================================== */
@@ -1908,33 +1636,27 @@ table {
  */
 .u-h1 {
   font-size: 2.25rem !important;
-  line-height: 1.33333 !important;
-}
+  line-height: 1.33333 !important; }
 
 .u-h2 {
   font-size: 1.75rem !important;
-  line-height: 1.71429 !important;
-}
+  line-height: 1.71429 !important; }
 
 .u-h3 {
   font-size: 1.5rem !important;
-  line-height: 1 !important;
-}
+  line-height: 1 !important; }
 
 .u-h4 {
   font-size: 1.25rem !important;
-  line-height: 1.2 !important;
-}
+  line-height: 1.2 !important; }
 
 .u-h5 {
   font-size: 1.125rem !important;
-  line-height: 1.33333 !important;
-}
+  line-height: 1.33333 !important; }
 
 .u-h6 {
   font-size: 1rem !important;
-  line-height: 1.5 !important;
-}
+  line-height: 1.5 !important; }
 
 /* ==========================================================================
    #SPACING
@@ -1951,244 +1673,184 @@ table {
  */
 /* stylelint-disable string-quotes */
 .u-padding {
-  padding: 24px !important;
-}
+  padding: 24px !important; }
 
 .u-padding-tiny {
-  padding: 6px !important;
-}
+  padding: 6px !important; }
 
 .u-padding-small {
-  padding: 12px !important;
-}
+  padding: 12px !important; }
 
 .u-padding-large {
-  padding: 48px !important;
-}
+  padding: 48px !important; }
 
 .u-padding-huge {
-  padding: 96px !important;
-}
+  padding: 96px !important; }
 
 .u-padding-none {
-  padding: 0 !important;
-}
+  padding: 0 !important; }
 
 .u-padding-top {
-  padding-top: 24px !important;
-}
+  padding-top: 24px !important; }
 
 .u-padding-top-tiny {
-  padding-top: 6px !important;
-}
+  padding-top: 6px !important; }
 
 .u-padding-top-small {
-  padding-top: 12px !important;
-}
+  padding-top: 12px !important; }
 
 .u-padding-top-large {
-  padding-top: 48px !important;
-}
+  padding-top: 48px !important; }
 
 .u-padding-top-huge {
-  padding-top: 96px !important;
-}
+  padding-top: 96px !important; }
 
 .u-padding-top-none {
-  padding-top: 0 !important;
-}
+  padding-top: 0 !important; }
 
 .u-padding-right {
-  padding-right: 24px !important;
-}
+  padding-right: 24px !important; }
 
 .u-padding-right-tiny {
-  padding-right: 6px !important;
-}
+  padding-right: 6px !important; }
 
 .u-padding-right-small {
-  padding-right: 12px !important;
-}
+  padding-right: 12px !important; }
 
 .u-padding-right-large {
-  padding-right: 48px !important;
-}
+  padding-right: 48px !important; }
 
 .u-padding-right-huge {
-  padding-right: 96px !important;
-}
+  padding-right: 96px !important; }
 
 .u-padding-right-none {
-  padding-right: 0 !important;
-}
+  padding-right: 0 !important; }
 
 .u-padding-bottom {
-  padding-bottom: 24px !important;
-}
+  padding-bottom: 24px !important; }
 
 .u-padding-bottom-tiny {
-  padding-bottom: 6px !important;
-}
+  padding-bottom: 6px !important; }
 
 .u-padding-bottom-small {
-  padding-bottom: 12px !important;
-}
+  padding-bottom: 12px !important; }
 
 .u-padding-bottom-large {
-  padding-bottom: 48px !important;
-}
+  padding-bottom: 48px !important; }
 
 .u-padding-bottom-huge {
-  padding-bottom: 96px !important;
-}
+  padding-bottom: 96px !important; }
 
 .u-padding-bottom-none {
-  padding-bottom: 0 !important;
-}
+  padding-bottom: 0 !important; }
 
 .u-padding-left {
-  padding-left: 24px !important;
-}
+  padding-left: 24px !important; }
 
 .u-padding-left-tiny {
-  padding-left: 6px !important;
-}
+  padding-left: 6px !important; }
 
 .u-padding-left-small {
-  padding-left: 12px !important;
-}
+  padding-left: 12px !important; }
 
 .u-padding-left-large {
-  padding-left: 48px !important;
-}
+  padding-left: 48px !important; }
 
 .u-padding-left-huge {
-  padding-left: 96px !important;
-}
+  padding-left: 96px !important; }
 
 .u-padding-left-none {
-  padding-left: 0 !important;
-}
+  padding-left: 0 !important; }
 
 .u-margin {
-  margin: 24px !important;
-}
+  margin: 24px !important; }
 
 .u-margin-tiny {
-  margin: 6px !important;
-}
+  margin: 6px !important; }
 
 .u-margin-small {
-  margin: 12px !important;
-}
+  margin: 12px !important; }
 
 .u-margin-large {
-  margin: 48px !important;
-}
+  margin: 48px !important; }
 
 .u-margin-huge {
-  margin: 96px !important;
-}
+  margin: 96px !important; }
 
 .u-margin-none {
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
 .u-margin-top {
-  margin-top: 24px !important;
-}
+  margin-top: 24px !important; }
 
 .u-margin-top-tiny {
-  margin-top: 6px !important;
-}
+  margin-top: 6px !important; }
 
 .u-margin-top-small {
-  margin-top: 12px !important;
-}
+  margin-top: 12px !important; }
 
 .u-margin-top-large {
-  margin-top: 48px !important;
-}
+  margin-top: 48px !important; }
 
 .u-margin-top-huge {
-  margin-top: 96px !important;
-}
+  margin-top: 96px !important; }
 
 .u-margin-top-none {
-  margin-top: 0 !important;
-}
+  margin-top: 0 !important; }
 
 .u-margin-right {
-  margin-right: 24px !important;
-}
+  margin-right: 24px !important; }
 
 .u-margin-right-tiny {
-  margin-right: 6px !important;
-}
+  margin-right: 6px !important; }
 
 .u-margin-right-small {
-  margin-right: 12px !important;
-}
+  margin-right: 12px !important; }
 
 .u-margin-right-large {
-  margin-right: 48px !important;
-}
+  margin-right: 48px !important; }
 
 .u-margin-right-huge {
-  margin-right: 96px !important;
-}
+  margin-right: 96px !important; }
 
 .u-margin-right-none {
-  margin-right: 0 !important;
-}
+  margin-right: 0 !important; }
 
 .u-margin-bottom {
-  margin-bottom: 24px !important;
-}
+  margin-bottom: 24px !important; }
 
 .u-margin-bottom-tiny {
-  margin-bottom: 6px !important;
-}
+  margin-bottom: 6px !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 12px !important;
-}
+  margin-bottom: 12px !important; }
 
 .u-margin-bottom-large {
-  margin-bottom: 48px !important;
-}
+  margin-bottom: 48px !important; }
 
 .u-margin-bottom-huge {
-  margin-bottom: 96px !important;
-}
+  margin-bottom: 96px !important; }
 
 .u-margin-bottom-none {
-  margin-bottom: 0 !important;
-}
+  margin-bottom: 0 !important; }
 
 .u-margin-left {
-  margin-left: 24px !important;
-}
+  margin-left: 24px !important; }
 
 .u-margin-left-tiny {
-  margin-left: 6px !important;
-}
+  margin-left: 6px !important; }
 
 .u-margin-left-small {
-  margin-left: 12px !important;
-}
+  margin-left: 12px !important; }
 
 .u-margin-left-large {
-  margin-left: 48px !important;
-}
+  margin-left: 48px !important; }
 
 .u-margin-left-huge {
-  margin-left: 96px !important;
-}
+  margin-left: 96px !important; }
 
 .u-margin-left-none {
-  margin-left: 0 !important;
-}
+  margin-left: 0 !important; }
 
 /* stylelint-enable string-quotes */
 /* ==========================================================================
@@ -2212,21 +1874,17 @@ table {
     color: #000 !important;
     /* [1] */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   a,
   a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    content: " (" attr(title) ")"; }
 
   /**
    * Don't show links that are fragment identifiers, or use the `javascript:`
@@ -2234,43 +1892,35 @@ table {
    */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   /**
    * Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
    */
   thead {
-    display: table-header-group;
-  }
+    display: table-header-group; }
 
   tr,
   img {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   img {
-    max-width: 100% !important;
-  }
+    max-width: 100% !important; }
 
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
+    page-break-after: avoid; } }
 /* ==========================================================================
    #HIDE
    ========================================================================== */
@@ -2286,14 +1936,12 @@ table {
   overflow: hidden !important;
   padding: 0 !important;
   position: absolute !important;
-  width: 1px !important;
-}
+  width: 1px !important; }
 
 /**
  * Hide visually and from screen readers.
  */
 .u-hidden {
-  display: none !important;
-}
+  display: none !important; }
 
 /*# sourceMappingURL=main.css.map */
