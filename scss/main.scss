@@ -12,7 +12,6 @@
  * CONTENTS
  *
  * SETTINGS
- * Config...............Project-level configuration and feature switches.
  * Core.................duckycss’ core and setup settings.
  * Global...............Project-wide variables and settings.
  *
@@ -70,7 +69,6 @@
  */
 
 // SETTINGS
-@import "settings/settings.config";
 @import "settings/settings.core";
 @import "settings/settings.global";
 
