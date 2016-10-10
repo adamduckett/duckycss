@@ -46,13 +46,7 @@ $ducky-global-spacing-unit-factor-large:  2    !default;
 $ducky-global-spacing-unit-factor-huge:   4    !default;
 
 
-// Define our object modifier classes
-$ducky-modifiers: (
-  "tiny"  : 0.25,
-  "small" : 0.5,
-  "large" : 2,
-  "huge"  : 4,
-);
+
 
 
 // Define the fractions we want to output utility width classes for.

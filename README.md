@@ -11,16 +11,13 @@ With that in mind, I canned my own project and forked a copy of inuitcss to use 
 I think it's important I don't try to force people outside of their own workflow. So whether you use [Gulp](http://gulpjs.com/), [Grunt](http://gruntjs.com/), [Webpack](https://webpack.github.io/) or the latest task runner all the cool kids are using go nuts. Basically this is an 'Installation' section about how there is no installation section :)
 
 ##Getting Started
-Either download the .zip or clone this repo to your local machine and ```cd``` into it. You'll notice 3 folders: ```css/```, ```less/``` and ```scss/```.
+Either download the .zip or clone this repo to your local machine and ```cd``` into it.
 
 ###Sass
 [Sass](http://sass-lang.com/) is my CSS extension language of choice so this project is geared towards Sass users- in particular the SCSS (Sassy CSS) syntax.
 
 ###Less
 Despite my penchant for Sass we use [Less](http://lesscss.org/) at [EKM](https://www.ekm.com/) hence my inclusion of a ```less/``` directory. Unfortunately Less doesn't quite include the same functionality as Sass in terms of logical and looping operators so the code in ```less/``` is more verbose than its big sister's.
-
-###CSS
-If pre-processing isn't your bag I've included both minified and un-minified CSS files in ```css/```. Because I'm nice like that. If you *are* using Sass or Less this is the directory your processed styles will end up in. We're talking about overrides, baby!
 
 TL;DR pick your weapon of choice :)
 
