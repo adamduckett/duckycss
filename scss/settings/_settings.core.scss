@@ -101,7 +101,7 @@ $ducky-breakpoint-has-widths: (
 // Check that chosen width is a number.
 
 @if (type-of($ducky-wrapper-width) != number) {
-  @error "`#{$ducky-wrapper-width}` needs to be a number."
+  @error "`#{$ducky-wrapper-width}` needs to be a number.";
 }
 
 
