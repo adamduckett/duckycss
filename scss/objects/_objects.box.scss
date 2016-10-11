@@ -31,18 +31,18 @@
   padding: 0;
 }
 
-.o-box--tiny {
+.o-box--#{$ducky-modifier-tiny} {
   padding: $ducky-global-spacing-unit-tiny;
 }
 
-.o-box--small {
+.o-box--#{$ducky-modifier-small} {
   padding: $ducky-global-spacing-unit-small;
 }
 
-.o-box--large {
+.o-box--#{$ducky-modifier-large} {
   padding: $ducky-global-spacing-unit-large;
 }
 
-.o-box--huge {
+.o-box--#{$ducky-modifier-huge} {
   padding: $ducky-global-spacing-unit-huge;
 }

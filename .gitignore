@@ -1,7 +1,7 @@
 *.gz
 node_modules/
 bower_components/
-css/
+*.css
 *.css.map
 .sass-cache
 .DS_Store

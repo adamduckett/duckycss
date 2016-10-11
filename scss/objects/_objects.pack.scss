@@ -57,19 +57,19 @@
 /* Size variants.
    ========================================================================== */
 
-.o-pack--tiny {
+.o-pack--#{$ducky-modifier-tiny} {
   border-spacing: $ducky-global-spacing-unit-tiny;
 }
 
-.o-pack--small {
+.o-pack--#{$ducky-modifier-small} {
   border-spacing: $ducky-global-spacing-unit-small;
 }
 
-.o-pack--large {
+.o-pack--#{$ducky-modifier-large} {
   border-spacing: $ducky-global-spacing-unit-large;
 }
 
-.o-pack--huge {
+.o-pack--#{$ducky-modifier-huge} {
   border-spacing: $ducky-global-spacing-unit-huge;
 }
 

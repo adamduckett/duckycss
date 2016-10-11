@@ -114,7 +114,7 @@ $ducky-use-markup-fix: false !default;
 /* Gutter size modifiers.
    ========================================================================== */
 
-.o-grid--tiny {
+.o-grid--#{$ducky-modifier-tiny} {
   margin-left: -$ducky-global-spacing-unit-tiny;
 
   > .o-grid__item {
@@ -124,7 +124,7 @@ $ducky-use-markup-fix: false !default;
 }
 
 
-.o-grid--small {
+.o-grid--#{$ducky-modifier-small} {
   margin-left: -$ducky-global-spacing-unit-small;
 
   > .o-grid__item {
@@ -134,7 +134,7 @@ $ducky-use-markup-fix: false !default;
 }
 
 
-.o-grid--large {
+.o-grid--#{$ducky-modifier-large} {
   margin-left: -$ducky-global-spacing-unit-large;
 
   > .o-grid__item {
@@ -144,7 +144,7 @@ $ducky-use-markup-fix: false !default;
 }
 
 
-.o-grid--huge {
+.o-grid--#{$ducky-modifier-huge} {
   margin-left: -$ducky-global-spacing-unit-huge;
 
   > .o-grid__item {

@@ -47,7 +47,7 @@
  * reversible options for all available sizes.
  */
 
-.o-media--tiny {
+.o-media--#{$ducky-modifier-tiny} {
 
   > .o-media__img {
     margin-right: $ducky-global-spacing-unit-tiny;
@@ -65,7 +65,7 @@
 }
 
 
-.o-media--small {
+.o-media--#{$ducky-modifier-small} {
 
   > .o-media__img {
     margin-right: $ducky-global-spacing-unit-small;
@@ -83,7 +83,7 @@
 }
 
 
-.o-media--large {
+.o-media--#{$ducky-modifier-large} {
 
   > .o-media__img {
     margin-right: $ducky-global-spacing-unit-large;
@@ -101,7 +101,7 @@
 }
 
 
-.o-media--huge {
+.o-media--#{$ducky-modifier-huge} {
 
   > .o-media__img {
     margin-right: $ducky-global-spacing-unit-huge;

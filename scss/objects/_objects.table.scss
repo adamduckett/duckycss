@@ -37,7 +37,7 @@
 /* Size variants.
    ========================================================================== */
 
-.o-table--tiny {
+.o-table--#{$ducky-modifier-tiny} {
 
   th,
   td {
@@ -46,7 +46,7 @@
 
 }
 
-.o-table--small {
+.o-table--#{$ducky-modifier-small} {
 
   th,
   td {
@@ -55,7 +55,7 @@
 
 }
 
-.o-table--large {
+.o-table--#{$ducky-modifier-large} {
 
   th,
   td {
@@ -64,7 +64,7 @@
 
 }
 
-.o-table--huge {
+.o-table--#{$ducky-modifier-huge} {
 
   th,
   td {

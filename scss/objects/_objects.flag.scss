@@ -79,7 +79,7 @@
 /* Size variants.
    ========================================================================== */
 
-.o-flag--tiny {
+.o-flag--#{$ducky-modifier-tiny} {
 
   > .o-flag__img {
     padding-right: $ducky-global-spacing-unit-tiny;
@@ -96,7 +96,7 @@
 
 }
 
-.o-flag--small {
+.o-flag--#{$ducky-modifier-small} {
 
   > .o-flag__img {
     padding-right: $ducky-global-spacing-unit-small;
@@ -113,7 +113,7 @@
 
 }
 
-.o-flag--large {
+.o-flag--#{$ducky-modifier-large} {
 
   > .o-flag__img {
     padding-right: $ducky-global-spacing-unit-large;
@@ -130,7 +130,7 @@
 
 }
 
-.o-flag--huge {
+.o-flag--#{$ducky-modifier-huge} {
 
   > .o-flag__img {
     padding-right: $ducky-global-spacing-unit-huge;
