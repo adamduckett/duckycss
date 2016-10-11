@@ -13,31 +13,14 @@
   margin-right: auto;
   margin-left:  auto;
   max-width: $ducky-wrapper-width;
-}
 
+  // Size variants.
+  @each $modifier, $multiple in $ducky-modifiers {
+    $value: ($ducky-global-spacing-unit * $multiple);
 
-
-
-
-/* Size variants.
-   ========================================================================== */
-
-.o-wrapper--#{$ducky-modifier-tiny} {
-  padding-right: $ducky-global-spacing-unit-tiny;
-  padding-left:  $ducky-global-spacing-unit-tiny;
-}
-
-.o-wrapper--#{$ducky-modifier-small} {
-  padding-right: $ducky-global-spacing-unit-small;
-  padding-left:  $ducky-global-spacing-unit-small;
-}
-
-.o-wrapper--#{$ducky-modifier-large} {
-  padding-right: $ducky-global-spacing-unit-large;
-  padding-left:  $ducky-global-spacing-unit-large;
-}
-
-.o-wrapper--#{$ducky-modifier-huge} {
-  padding-right: $ducky-global-spacing-unit-huge;
-  padding-left:  $ducky-global-spacing-unit-huge;
+    &--#{$modifier} {
+      padding-right: $value;
+      padding-left: $value;
+    }
+  }
 }

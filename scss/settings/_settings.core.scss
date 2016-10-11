@@ -60,6 +60,13 @@ $ducky-modifier-small:  'small' !default;
 $ducky-modifier-large:  'large' !default;
 $ducky-modifier-huge:   'huge'  !default;
 
+$ducky-modifiers: (
+  'tiny'  : 0.25,
+  'small' : 0.5,
+  'large' : 2,
+  'huge'  : 4
+) !default;
+
 
 
 
