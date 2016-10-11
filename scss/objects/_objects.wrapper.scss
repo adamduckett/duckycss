@@ -6,14 +6,6 @@
  * Page-level constraining and wrapping elements.
  */
 
-$ducky-wrapper-width: 1200px !default;
-
-/* stylelint-disable */
-@if (type-of($ducky-wrapper-width) != number) {
-  @error "`#{$ducky-wrapper-width}` needs to be a number."
-}
-/* stylelint-enable */
-
 .o-wrapper {
   @include ducky-clearfix();
   padding-right: $ducky-global-spacing-unit;

@@ -7,6 +7,14 @@
 // preconfigured with caution.
 
 
+// Base page-level content wrapper width.
+
+$ducky-wrapper-width: 1200px !default;
+
+
+
+
+
 // Base typographical styles and baseline grid. You need to define these values
 // in pixels: duckycss will convert them to more appropriate units.
 
@@ -54,6 +62,8 @@ $ducky-modifier-huge:   'huge'  !default;
 
 
 
+
+
 // Define the fractions we want to output utility width classes for.
 $ducky-fractions: 1 2 3 4 5 !default;
 
@@ -86,6 +96,13 @@ $ducky-breakpoint-has-widths: (
 //                  DO NOT MODIFY ANYTHING BEYOND THIS POINT                  //
 //                                                                            //
 ////////////////////////////////////////////////////////////////////////////////
+
+
+// Check that chosen width is a number.
+
+@if (type-of($ducky-wrapper-width) != number) {
+  @error "`#{$ducky-wrapper-width}` needs to be a number."
+}
 
 
 // Check that the chosen font rules are pixel numbers.
