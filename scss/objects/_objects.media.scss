@@ -36,9 +36,6 @@
   }
 
 
-
-
-
 /* Size variants
    ========================================================================== */
 
@@ -47,79 +44,24 @@
  * reversible options for all available sizes.
  */
 
-.o-media--#{$ducky-modifier-tiny} {
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
 
-  > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-tiny;
-  }
-
-  &.o-media--reverse {
+  .o-media--#{$modifier} {
 
     > .o-media__img {
-      margin-right: 0;
-      margin-left:  $ducky-global-spacing-unit-tiny;
+      margin-right: $value;
     }
 
-  }
+    &.o-media--reverse {
 
-}
-
-
-.o-media--#{$ducky-modifier-small} {
-
-  > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-small;
-  }
-
-  &.o-media--reverse {
-
-    > .o-media__img {
-      margin-right: 0;
-      margin-left:  $ducky-global-spacing-unit-small;
+      > .o-media__img {
+        margin-right: 0;
+        margin-left:  $value;
+      }
     }
-
   }
-
 }
-
-
-.o-media--#{$ducky-modifier-large} {
-
-  > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-large;
-  }
-
-  &.o-media--reverse {
-
-    > .o-media__img {
-      margin-right: 0;
-      margin-left:  $ducky-global-spacing-unit-large;
-    }
-
-  }
-
-}
-
-
-.o-media--#{$ducky-modifier-huge} {
-
-  > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-huge;
-  }
-
-  &.o-media--reverse {
-
-    > .o-media__img {
-      margin-right: 0;
-      margin-left:  $ducky-global-spacing-unit-huge;
-    }
-
-  }
-
-}
-
-
-
 
 
 /* Reversed media objects
@@ -134,9 +76,6 @@
   }
 
 }
-
-
-
 
 
 /* Gutterless media objects

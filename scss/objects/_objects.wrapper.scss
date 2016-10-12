@@ -15,12 +15,18 @@
   max-width: $ducky-wrapper-width;
 
   // Size variants.
-  @each $modifier, $multiple in $ducky-modifiers {
-    $value: ($ducky-global-spacing-unit * $multiple);
 
-    &--#{$modifier} {
-      padding-right: $value;
-      padding-left: $value;
-    }
+}
+
+
+/* Size variants.
+   ========================================================================== */
+
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
+
+  .o-wrapper--#{$modifier} {
+    padding-right: $value;
+    padding-left: $value;
   }
 }

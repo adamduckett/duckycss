@@ -24,20 +24,12 @@
       margin-bottom: 0;
     }
 
-    .o-block--#{$ducky-modifier-tiny} > & {
-      margin-bottom: $ducky-global-spacing-unit-tiny;
-    }
+    @each $modifier, $multiple in $ducky-modifiers {
+      $value: ($ducky-global-spacing-unit * $multiple);
 
-    .o-block--#{$ducky-modifier-small} > & {
-      margin-bottom: $ducky-global-spacing-unit-small;
-    }
-
-    .o-block--#{$ducky-modifier-large} > & {
-      margin-bottom: $ducky-global-spacing-unit-large;
-    }
-
-    .o-block--#{$ducky-modifier-huge} > & {
-      margin-bottom: $ducky-global-spacing-unit-huge;
+      .o-block--#{$modifier} > & {
+        margin-bottom: $value;
+      }
     }
 
   }

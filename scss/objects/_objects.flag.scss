@@ -79,72 +79,25 @@
 /* Size variants.
    ========================================================================== */
 
-.o-flag--#{$ducky-modifier-tiny} {
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
 
-  > .o-flag__img {
-    padding-right: $ducky-global-spacing-unit-tiny;
-  }
-
-  &.o-flag--reverse {
+  .o-flag--#{$modifier} {
 
     > .o-flag__img {
-      padding-right: 0;
-      padding-left: $ducky-global-spacing-unit-tiny;
+      padding-right: $value;
+    }
+
+    &.o-flag--reverse {
+
+      > .o-flag__img {
+        padding-right: 0;
+        padding-left: $value;
+      }
+
     }
 
   }
-
-}
-
-.o-flag--#{$ducky-modifier-small} {
-
-  > .o-flag__img {
-    padding-right: $ducky-global-spacing-unit-small;
-  }
-
-  &.o-flag--reverse {
-
-    > .o-flag__img {
-      padding-right: 0;
-      padding-left: $ducky-global-spacing-unit-small;
-    }
-
-  }
-
-}
-
-.o-flag--#{$ducky-modifier-large} {
-
-  > .o-flag__img {
-    padding-right: $ducky-global-spacing-unit-large;
-  }
-
-  &.o-flag--reverse {
-
-    > .o-flag__img {
-      padding-right: 0;
-      padding-left: $ducky-global-spacing-unit-large;
-    }
-
-  }
-
-}
-
-.o-flag--#{$ducky-modifier-huge} {
-
-  > .o-flag__img {
-    padding-right: $ducky-global-spacing-unit-huge;
-  }
-
-  &.o-flag--reverse {
-
-    > .o-flag__img {
-      padding-right: 0;
-      padding-left: $ducky-global-spacing-unit-huge;
-    }
-
-  }
-
 }
 
 .o-flag--flush {

@@ -108,49 +108,19 @@ $ducky-use-markup-fix: false !default;
   }
 
 
-
-
-
 /* Gutter size modifiers.
    ========================================================================== */
 
-.o-grid--#{$ducky-modifier-tiny} {
-  margin-left: -$ducky-global-spacing-unit-tiny;
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
 
-  > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-tiny;
+  .o-grid--#{$modifier} {
+    margin-left: $value;
+
+    > .o-grid__item {
+      padding-left: $value;
+    }
   }
-
-}
-
-
-.o-grid--#{$ducky-modifier-small} {
-  margin-left: -$ducky-global-spacing-unit-small;
-
-  > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-small;
-  }
-
-}
-
-
-.o-grid--#{$ducky-modifier-large} {
-  margin-left: -$ducky-global-spacing-unit-large;
-
-  > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-large;
-  }
-
-}
-
-
-.o-grid--#{$ducky-modifier-huge} {
-  margin-left: -$ducky-global-spacing-unit-huge;
-
-  > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-huge;
-  }
-
 }
 
 
@@ -162,9 +132,6 @@ $ducky-use-markup-fix: false !default;
   }
 
 }
-
-
-
 
 
 /* Vertical alignment modifiers.
@@ -194,9 +161,6 @@ $ducky-use-markup-fix: false !default;
   }
 
 }
-
-
-
 
 
 /* Fill order modifiers.

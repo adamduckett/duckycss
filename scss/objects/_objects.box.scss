@@ -21,9 +21,6 @@
 }
 
 
-
-
-
 /* Size variants
    ========================================================================== */
 
@@ -31,18 +28,10 @@
   padding: 0;
 }
 
-.o-box--#{$ducky-modifier-tiny} {
-  padding: $ducky-global-spacing-unit-tiny;
-}
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
 
-.o-box--#{$ducky-modifier-small} {
-  padding: $ducky-global-spacing-unit-small;
-}
-
-.o-box--#{$ducky-modifier-large} {
-  padding: $ducky-global-spacing-unit-large;
-}
-
-.o-box--#{$ducky-modifier-huge} {
-  padding: $ducky-global-spacing-unit-huge;
+  .o-box--#{$modifier} {
+    padding: $value;
+  }
 }

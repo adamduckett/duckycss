@@ -15,22 +15,11 @@
 /* Size variants.
    ========================================================================== */
 
-.o-band--#{$ducky-modifier-tiny} {
-  padding-top: $ducky-global-spacing-unit-tiny;
-  padding-bottom: $ducky-global-spacing-unit-tiny;
-}
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
 
-.o-band--#{$ducky-modifier-small} {
-  padding-top: $ducky-global-spacing-unit-small;
-  padding-bottom: $ducky-global-spacing-unit-small;
-}
-
-.o-band--#{$ducky-modifier-large} {
-  padding-top: $ducky-global-spacing-unit-large;
-  padding-bottom: $ducky-global-spacing-unit-large;
-}
-
-.o-band--#{$ducky-modifier-huge} {
-  padding-top: $ducky-global-spacing-unit-huge;
-  padding-bottom: $ducky-global-spacing-unit-huge;
+  .o-band--#{$modifier} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
 }

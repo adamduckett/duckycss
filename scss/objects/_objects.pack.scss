@@ -40,9 +40,6 @@
   }
 
 
-
-
-
 /* Unequal-width items.
    ========================================================================== */
 
@@ -51,30 +48,16 @@
 }
 
 
-
-
-
 /* Size variants.
    ========================================================================== */
 
-.o-pack--#{$ducky-modifier-tiny} {
-  border-spacing: $ducky-global-spacing-unit-tiny;
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
+
+  .o-wrapper--#{$modifier} {
+    border-spacing: $value;
+  }
 }
-
-.o-pack--#{$ducky-modifier-small} {
-  border-spacing: $ducky-global-spacing-unit-small;
-}
-
-.o-pack--#{$ducky-modifier-large} {
-  border-spacing: $ducky-global-spacing-unit-large;
-}
-
-.o-pack--#{$ducky-modifier-huge} {
-  border-spacing: $ducky-global-spacing-unit-huge;
-}
-
-
-
 
 
 /* Reversed order packs

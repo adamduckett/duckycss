@@ -11,10 +11,6 @@
 }
 
 
-
-
-
-
 /* Equal-width table cells.
    ========================================================================== */
 
@@ -31,44 +27,16 @@
 }
 
 
-
-
-
 /* Size variants.
    ========================================================================== */
 
-.o-table--#{$ducky-modifier-tiny} {
+@each $modifier, $multiple in $ducky-modifiers {
+  $value: ($ducky-global-spacing-unit * $multiple);
 
-  th,
-  td {
-    padding: $ducky-global-spacing-unit-tiny;
+  .o-table--#{$modifier} {
+    th,
+    td {
+      padding: $value;
+    }
   }
-
-}
-
-.o-table--#{$ducky-modifier-small} {
-
-  th,
-  td {
-    padding: $ducky-global-spacing-unit-small;
-  }
-
-}
-
-.o-table--#{$ducky-modifier-large} {
-
-  th,
-  td {
-    padding: $ducky-global-spacing-unit-large;
-  }
-
-}
-
-.o-table--#{$ducky-modifier-huge} {
-
-  th,
-  td {
-    padding: $ducky-global-spacing-unit-huge;
-  }
-
 }
