@@ -40,7 +40,7 @@
 
   th,
   td {
-    padding: $ducky-global-spacing-unit-tiny;
+    padding: ducky-rem($ducky-global-spacing-unit-tiny);
   }
 
 }
@@ -49,7 +49,7 @@
 
   th,
   td {
-    padding: $ducky-global-spacing-unit-small;
+    padding: ducky-rem($ducky-global-spacing-unit-small);
   }
 
 }
@@ -58,7 +58,7 @@
 
   th,
   td {
-    padding: $ducky-global-spacing-unit-large;
+    padding: ducky-rem($ducky-global-spacing-unit-large);
   }
 
 }
@@ -67,7 +67,7 @@
 
   th,
   td {
-    padding: $ducky-global-spacing-unit-huge;
+    padding: ducky-rem($ducky-global-spacing-unit-huge);
   }
 
 }

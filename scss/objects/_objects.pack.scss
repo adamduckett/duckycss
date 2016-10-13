@@ -58,19 +58,19 @@
    ========================================================================== */
 
 .o-pack--#{$ducky-modifier-tiny} {
-  border-spacing: $ducky-global-spacing-unit-tiny;
+  border-spacing: ducky-rem($ducky-global-spacing-unit-tiny);
 }
 
 .o-pack--#{$ducky-modifier-small} {
-  border-spacing: $ducky-global-spacing-unit-small;
+  border-spacing: ducky-rem($ducky-global-spacing-unit-small);
 }
 
 .o-pack--#{$ducky-modifier-large} {
-  border-spacing: $ducky-global-spacing-unit-large;
+  border-spacing: ducky-rem($ducky-global-spacing-unit-large);
 }
 
 .o-pack--#{$ducky-modifier-huge} {
-  border-spacing: $ducky-global-spacing-unit-huge;
+  border-spacing: ducky-rem($ducky-global-spacing-unit-huge);
 }
 
 

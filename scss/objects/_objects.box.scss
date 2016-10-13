@@ -12,7 +12,7 @@
 .o-box {
   @include ducky-clearfix();
   display: block; /* [1] */
-  padding: $ducky-global-spacing-unit;
+  padding: ducky-rem($ducky-global-spacing-unit);
 
   > :last-child {
     margin-bottom: 0;
@@ -32,17 +32,17 @@
 }
 
 .o-box--#{$ducky-modifier-tiny} {
-  padding: $ducky-global-spacing-unit-tiny;
+  padding: ducky-rem($ducky-global-spacing-unit-tiny);
 }
 
 .o-box--#{$ducky-modifier-small} {
-  padding: $ducky-global-spacing-unit-small;
+  padding: ducky-rem($ducky-global-spacing-unit-small);
 }
 
 .o-box--#{$ducky-modifier-large} {
-  padding: $ducky-global-spacing-unit-large;
+  padding: ducky-rem($ducky-global-spacing-unit-large);
 }
 
 .o-box--#{$ducky-modifier-huge} {
-  padding: $ducky-global-spacing-unit-huge;
+  padding: ducky-rem($ducky-global-spacing-unit-huge);
 }

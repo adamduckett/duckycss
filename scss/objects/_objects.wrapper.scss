@@ -8,7 +8,7 @@
 
 .o-wrapper {
   @include ducky-clearfix();
-  padding-right: $ducky-global-spacing-unit;
+  padding-right: ducky-rem($ducky-global-spacing-unit);
   padding-left:  $ducky-global-spacing-unit;
   margin-right: auto;
   margin-left:  auto;
@@ -23,21 +23,21 @@
    ========================================================================== */
 
 .o-wrapper--#{$ducky-modifier-tiny} {
-  padding-right: $ducky-global-spacing-unit-tiny;
+  padding-right: ducky-rem($ducky-global-spacing-unit-tiny);
   padding-left:  $ducky-global-spacing-unit-tiny;
 }
 
 .o-wrapper--#{$ducky-modifier-small} {
-  padding-right: $ducky-global-spacing-unit-small;
+  padding-right: ducky-rem($ducky-global-spacing-unit-small);
   padding-left:  $ducky-global-spacing-unit-small;
 }
 
 .o-wrapper--#{$ducky-modifier-large} {
-  padding-right: $ducky-global-spacing-unit-large;
+  padding-right: ducky-rem($ducky-global-spacing-unit-large);
   padding-left:  $ducky-global-spacing-unit-large;
 }
 
 .o-wrapper--#{$ducky-modifier-huge} {
-  padding-right: $ducky-global-spacing-unit-huge;
+  padding-right: ducky-rem($ducky-global-spacing-unit-huge);
   padding-left:  $ducky-global-spacing-unit-huge;
 }

@@ -15,7 +15,7 @@
 
   .o-media__img {
     float: left;
-    margin-right: $ducky-global-spacing-unit;
+    margin-right: ducky-rem($ducky-global-spacing-unit);
 
     > img {
       display: block;
@@ -50,7 +50,7 @@
 .o-media--#{$ducky-modifier-tiny} {
 
   > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-tiny;
+    margin-right: ducky-rem($ducky-global-spacing-unit-tiny);
   }
 
   &.o-media--reverse {
@@ -68,7 +68,7 @@
 .o-media--#{$ducky-modifier-small} {
 
   > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-small;
+    margin-right: ducky-rem($ducky-global-spacing-unit-small);
   }
 
   &.o-media--reverse {
@@ -86,7 +86,7 @@
 .o-media--#{$ducky-modifier-large} {
 
   > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-large;
+    margin-right: ducky-rem($ducky-global-spacing-unit-large);
   }
 
   &.o-media--reverse {
@@ -104,7 +104,7 @@
 .o-media--#{$ducky-modifier-huge} {
 
   > .o-media__img {
-    margin-right: $ducky-global-spacing-unit-huge;
+    margin-right: ducky-rem($ducky-global-spacing-unit-huge);
   }
 
   &.o-media--reverse {
@@ -130,7 +130,7 @@
   > .o-media__img {
     float: right;
     margin-right: 0;
-    margin-left: $ducky-global-spacing-unit;
+    margin-left: ducky-rem($ducky-global-spacing-unit);
   }
 
 }

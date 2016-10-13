@@ -14,7 +14,7 @@
 
 
   .o-block__img {
-    margin-bottom: $ducky-global-spacing-unit;
+    margin-bottom: ducky-rem($ducky-global-spacing-unit);
 
 
     /* Size variants.
@@ -25,19 +25,19 @@
     }
 
     .o-block--#{$ducky-modifier-tiny} > & {
-      margin-bottom: $ducky-global-spacing-unit-tiny;
+      margin-bottom: ducky-rem($ducky-global-spacing-unit-tiny);
     }
 
     .o-block--#{$ducky-modifier-small} > & {
-      margin-bottom: $ducky-global-spacing-unit-small;
+      margin-bottom: ducky-rem($ducky-global-spacing-unit-small);
     }
 
     .o-block--#{$ducky-modifier-large} > & {
-      margin-bottom: $ducky-global-spacing-unit-large;
+      margin-bottom: ducky-rem($ducky-global-spacing-unit-large);
     }
 
     .o-block--#{$ducky-modifier-huge} > & {
-      margin-bottom: $ducky-global-spacing-unit-huge;
+      margin-bottom: ducky-rem($ducky-global-spacing-unit-huge);
     }
 
   }

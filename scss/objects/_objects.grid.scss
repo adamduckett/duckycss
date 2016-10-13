@@ -99,7 +99,7 @@ $ducky-use-markup-fix: false !default;
     display: inline-block; /* [2] */
     vertical-align: top; /* [3] */
     width: 100%; /* [4] */
-    padding-left: $ducky-global-spacing-unit; /* [5] */
+    padding-left: ducky-rem($ducky-global-spacing-unit); /* [5] */
 
     @if ($ducky-use-markup-fix == false) {
       font-size: 1rem;
@@ -118,7 +118,7 @@ $ducky-use-markup-fix: false !default;
   margin-left: -$ducky-global-spacing-unit-tiny;
 
   > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-tiny;
+    padding-left: ducky-rem($ducky-global-spacing-unit-tiny);
   }
 
 }
@@ -128,7 +128,7 @@ $ducky-use-markup-fix: false !default;
   margin-left: -$ducky-global-spacing-unit-small;
 
   > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-small;
+    padding-left: ducky-rem($ducky-global-spacing-unit-small);
   }
 
 }
@@ -138,7 +138,7 @@ $ducky-use-markup-fix: false !default;
   margin-left: -$ducky-global-spacing-unit-large;
 
   > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-large;
+    padding-left: ducky-rem($ducky-global-spacing-unit-large);
   }
 
 }
@@ -148,7 +148,7 @@ $ducky-use-markup-fix: false !default;
   margin-left: -$ducky-global-spacing-unit-huge;
 
   > .o-grid__item {
-    padding-left: $ducky-global-spacing-unit-huge;
+    padding-left: ducky-rem($ducky-global-spacing-unit-huge);
   }
 
 }

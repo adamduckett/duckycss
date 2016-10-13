@@ -7,8 +7,8 @@
  */
 
 .o-band {
-  padding-top: $ducky-global-spacing-unit;
-  padding-bottom: $ducky-global-spacing-unit;
+  padding-top: ducky-rem($ducky-global-spacing-unit);
+  padding-bottom: ducky-rem($ducky-global-spacing-unit);
 }
 
 
@@ -19,21 +19,21 @@
    ========================================================================== */
 
 .o-band--#{$ducky-modifier-tiny} {
-  padding-top: $ducky-global-spacing-unit-tiny;
-  padding-bottom: $ducky-global-spacing-unit-tiny;
+  padding-top: ducky-rem($ducky-global-spacing-unit-tiny);
+  padding-bottom: ducky-rem($ducky-global-spacing-unit-tiny);
 }
 
 .o-band--#{$ducky-modifier-small} {
-  padding-top: $ducky-global-spacing-unit-small;
-  padding-bottom: $ducky-global-spacing-unit-small;
+  padding-top: ducky-rem($ducky-global-spacing-unit-small);
+  padding-bottom: ducky-rem($ducky-global-spacing-unit-small);
 }
 
 .o-band--#{$ducky-modifier-large} {
-  padding-top: $ducky-global-spacing-unit-large;
-  padding-bottom: $ducky-global-spacing-unit-large;
+  padding-top: ducky-rem($ducky-global-spacing-unit-large);
+  padding-bottom: ducky-rem($ducky-global-spacing-unit-large);
 }
 
 .o-band--#{$ducky-modifier-huge} {
-  padding-top: $ducky-global-spacing-unit-huge;
-  padding-bottom: $ducky-global-spacing-unit-huge;
+  padding-top: ducky-rem($ducky-global-spacing-unit-huge);
+  padding-bottom: ducky-rem($ducky-global-spacing-unit-huge);
 }

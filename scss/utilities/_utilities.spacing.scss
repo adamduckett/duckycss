@@ -13,8 +13,6 @@
  *   .u-padding-right-none {}
  */
 
-/* stylelint-disable string-quotes */
-
 $ducky-spacing-directions: (
   null,
   '-top',
@@ -30,10 +28,10 @@ $ducky-spacing-properties: (
 
 $ducky-spacing-sizes: (
   null: $ducky-global-spacing-unit,
-  '-tiny': $ducky-global-spacing-unit-tiny,
-  '-small': $ducky-global-spacing-unit-small,
-  '-large': $ducky-global-spacing-unit-large,
-  '-huge': $ducky-global-spacing-unit-huge,
+  '-tiny': ducky-rem($ducky-global-spacing-unit-tiny),
+  '-small': ducky-rem($ducky-global-spacing-unit-small),
+  '-large': ducky-rem($ducky-global-spacing-unit-large),
+  '-huge': ducky-rem($ducky-global-spacing-unit-huge),
   '-none': 0
 ) !default;
 
@@ -53,5 +51,3 @@ $ducky-spacing-sizes: (
   }
 
 }
-
-/* stylelint-enable string-quotes */
