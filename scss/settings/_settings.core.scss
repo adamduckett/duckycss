@@ -89,6 +89,28 @@ $ducky-breakpoint-has-widths: (
 
 
 
+// A list of aspect ratios that get generated as modifier classes.
+$ducky-ratios: (
+  2:1,
+  4:3,
+  16:9,
+) !default;
+
+
+
+
+
+// A list of cropping ratios that get generated as modifier classes.
+$ducky-crops: (
+  2:1,
+  4:3,
+  16:9,
+) !default;
+
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
 //                               W A R N I N G                                //
