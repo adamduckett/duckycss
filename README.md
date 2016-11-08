@@ -62,7 +62,7 @@ There's an example button component included to get you started.
 Whoever said you shouldn't use `!important`, eh? Because you'll find them by the sack-load in this layer. Utility classes have one specific job to do and should never be overwritten. NEVER. These incredibly useful helper classes will help you out of more than a pickle.
 
 ##Respek
-Thanks to [Harry Roberts](https://twitter.com/csswizardry), [Nicole Sullivan](https://twitter.com/stubbornella), [Nicolas Gallagher][https://twitter.com/necolas] and [Hugo Giraudel](http://hugogiraudel.com/) for teaching me more about front-end development than any book or course could.
+Thanks to [Harry Roberts](https://twitter.com/csswizardry), [Nicole Sullivan](https://twitter.com/stubbornella), [Nicolas Gallagher](https://twitter.com/necolas) and [Hugo Giraudel](http://hugogiraudel.com/) for teaching me more about front-end development than any book or course could.
 
 ##Get in Touch
 I like beer. We should go for a beer! [Hit me up](https://twitter.com/adam_duckett).
